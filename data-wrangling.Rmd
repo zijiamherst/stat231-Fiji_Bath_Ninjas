@@ -1,5 +1,5 @@
 ---
-title: "data-wrangling"
+title: "Data-Wrangling"
 author: "Ziji Zhou and Rohil Bathija"
 date: "October 14, 2021"
 urlcolor: blue
@@ -54,9 +54,7 @@ header-includes:
 # load packages
 library(tidyverse)
 library(kableExtra)
-library(unvotes)
-library(lubridate)
-library(DT)
+library(robotstxt) 
 
 # set code chunk defaults
 knitr::opts_chunk$set(tidy = F, # display code as typed
@@ -72,8 +70,48 @@ theme_set(theme_classic())
 options(scipen = 1, knitr.kable.NA = '')
 ```
 
-# **NBA Dataset**
+# **NBA Dataset** {-}
 
-# **Census Dataset**
+Get the payroll of each team for a certain year range.
 
-# **Combining the Data**
+## **Historical Salaries** {-}
+
+### **Workflow** {-}
+
+Seasons -> teams -> player salaries.
+Seasons url: https://www.basketball-reference.com/leagues/
+
+```{r}
+# check paths
+nba_url <- "https://www.basketball-reference.com/leagues/"
+
+paths_allowed(nba_url)
+```
+
+
+```{r}
+# get table 
+
+nba_data <- nba_url %>% 
+  read_html() %>%
+  html_nodes("table") %>%
+  purrr::pluck(1) %>%
+  html_table() %>%
+  janitor::clean_names() %>%
+  filter(str_detect(x,"^20|19[8-9]")) %>%
+  filter(!str_detect(x,"^2021")) %>%
+  rename(season = x)
+
+nba_href <- nba_url %>%
+  read_html() %>%
+  html_elements("#stats > tbody > tr:nth-child(35) > th > a") %>%
+  html_attr()
+  
+nba_data
+nba_href
+```
+
+
+# **Census Dataset** {-}
+
+# **Combining the Data** {-}
