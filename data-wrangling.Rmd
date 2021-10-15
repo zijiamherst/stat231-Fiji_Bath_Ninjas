@@ -52,9 +52,10 @@ header-includes:
 
 ```{r setup, include = FALSE}
 # load packages
-library(tidyverse)
+library(tidyverse) 
 library(kableExtra)
 library(robotstxt) 
+library(rvest)
 
 # set code chunk defaults
 knitr::opts_chunk$set(tidy = F, # display code as typed
@@ -122,7 +123,7 @@ nba_href
 ```
 
 ```{r}
-# convert the excel zip codes into csv
+# convert the excel zip codes into csv for zip code info
 library(readxl)
 nba_zip_codes <- read_excel("data/nba-zip-codes.xlsm")
 write.csv(nba_zip_codes, "data/nba_zip_codes.csv")
@@ -130,6 +131,28 @@ zipcode_income <- read_excel("data/zipcodeavgsal.xlsm")
 write.csv(zipcode_income, "data/zipcode_income.csv")
 ```
 
+```{r}
+# getting a table of the top paid players in the nba.
+paid_url <- "https://hoopshype.com/salaries/players/"
+paths_allowed(paid_url)
+paid_players <- paid_url %>%
+  read_html() %>%
+  html_nodes("table")%>%
+  purrr::pluck(1)%>%
+  html_table() %>%
+  janitor::clean_names()%>%
+  #removing first redunadnt column
+  select(!"x1") %>%
+  #remove first row which had titles
+  filter(!str_detect(x2,"Player")) %>%
+  #creating new names for columns
+  rename( Player = x2, Salary = x3) %>%
+  #only need the first two rows (player and salary)
+  select(c("Player", "Salary"))
+  #renaming the columns
+
+write_csv(paid_players, "data/paid_players.csv")
+```
 # **Census Dataset** {-}
 
 # **Combining the Data** {-}
