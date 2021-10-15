@@ -101,6 +101,8 @@ paths_allowed(nba_url)
 
 
 ```{r}
+# Team historical win% and total salary
+
 # get table 
 
 nba_data <- nba_url %>% 
@@ -109,41 +111,95 @@ nba_data <- nba_url %>%
   purrr::pluck(1) %>%
   html_table() %>%
   janitor::clean_names() %>%
-  filter(str_detect(x,"^20[1|2]")) %>%
+  # filter years wanted
+  filter(str_detect(x,"^20|199")) %>%
   filter(!str_detect(x,"^2021")) %>%
-  filter(!str_detect(x,"^2010")) %>%
+  # rename
   rename(season = x) %>%
+  # add link column and delete extra columns
   select("season") %>%
-  mutate(link_bref = "", 
-         link_strak = "") 
+  mutate(link_bref = "") 
 
 # manual urls per season
 rows = 1
-years = 2021:2012
+years = 2021:1991
 for(i in years){
   nba_data$link_bref[rows] = paste("https://www.basketball-reference.com/leagues/NBA_",i,".html",sep = "") 
   rows = rows + 1
 }
-rows = 1
-years = 2020:2011
-for(i in years){
-  nba_data$link_strak[rows] = paste("https://www.spotrac.com/nba/cap/",i,"/",sep = "") 
-  rows = rows + 1
-}
+
+# add link for each team on each season
+for(i in nba_data$link_bref){
+  # set url
+  url <- i
   
-nba_data
+  # get the team names as a vector
+  team_name <- url %>%
+    read_html() %>%
+    html_elements("#per_game-team > tbody > tr > td.left > a") %>%
+    html_text()
+  
+  # get the links of each team
+  team_link <- url %>%
+    read_html() %>%
+    html_elements("#per_game-team > tbody > tr > td.left > a") %>%
+    html_attr("href")
+  
+  # adjust the links
+  for(x in 1:length(team_link)){
+    team_link[x] <- paste("https://www.basketball-reference.com",team_link[x],sep = "")
+  }
+  
+  # get win % for each team
+  for(x in team_link){
+    team_stats <- x %>%
+      read_html() %>%
+      html_elements("#team_misc") %>%
+      html_table()
+  }
+  
+}
+
+team_link <- "https://www.basketball-reference.com/teams/PHI/1991.html"
+
+team_stats <- team_link %>%
+      read_html() %>%
+      html_elements("#salaries2 > tbody > tr:nth-child(1) > td.left > a")
+
+team_stats
 ```
 
 ```{r}
+# nba city and median income
+
 # convert the excel zip codes into csv for zip code info
+
 library(readxl)
+
 nba_zip_codes <- read_excel("data/nba-zip-codes.xlsm")
-write.csv(nba_zip_codes, "data/nba_zip_codes.csv")
+
 zipcode_income <- read_excel("data/zipcodeavgsal.xlsm")
-write.csv(zipcode_income, "data/zipcode_income.csv")
+
+
+# tidy and join data
+
+zipcode_income <- zipcode_income %>% 
+  janitor::clean_names() %>%
+  rename(zip = zip_codes)
+
+nba_zip_codes <- nba_zip_codes %>%
+  janitor::clean_names()
+
+nba_city_income <- nba_zip_codes %>%
+  inner_join(zipcode_income, by = c("zip" = "zip"))
+
+write.csv(nba_city_income, "data/nba_city_income.csv")
 ```
 
 ```{r}
+#NBA top player salary
+
+# from basketball reference
 nba_salary <- read_excel("data/nba_salary.xlsm")
 write.csv(nba_salary, "data/nba_salary.csv")
 ```
@@ -168,8 +224,7 @@ paid_players <- paid_url %>%
   select(c("Player", "Salary"))
   #renaming the columns
 
+paid_players
+
 write_csv(paid_players, "data/paid_players.csv")
 ```
-# **Census Dataset** {-}
-
-# **Combining the Data** {-}
