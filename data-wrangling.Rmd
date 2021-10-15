@@ -74,6 +74,15 @@ options(scipen = 1, knitr.kable.NA = '')
 
 Get the payroll of each team for a certain year range.
 
+things we need:
+total payroll of team by year
+total team wins for the year
+each teams zipcode
+any data about zipcode.
+highest paid players:
+http://www.espn.com/nba/salaries/_/year/2020/seasontype/1
+stats for those players.
+
 ## **Historical Salaries** {-}
 
 ### **Workflow** {-}
