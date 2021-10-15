@@ -107,17 +107,29 @@ nba_data <- nba_url %>%
   purrr::pluck(1) %>%
   html_table() %>%
   janitor::clean_names() %>%
-  filter(str_detect(x,"^20|19[8-9]")) %>%
+  filter(str_detect(x,"^20[1|2]")) %>%
   filter(!str_detect(x,"^2021")) %>%
-  rename(season = x)
+  filter(!str_detect(x,"^2010")) %>%
+  rename(season = x) %>%
+  select("season") %>%
+  mutate(link_bref = "", 
+         link_strak = "") 
 
-nba_href <- nba_url %>%
-  read_html() %>%
-  html_elements("#stats > tbody > tr:nth-child(35) > th > a") %>%
-  html_attr()
+# manual urls per season
+rows = 1
+years = 2021:2012
+for(i in years){
+  nba_data$link_bref[rows] = paste("https://www.basketball-reference.com/leagues/NBA_",i,".html",sep = "") 
+  rows = rows + 1
+}
+rows = 1
+years = 2020:2011
+for(i in years){
+  nba_data$link_strak[rows] = paste("https://www.spotrac.com/nba/cap/",i,"/",sep = "") 
+  rows = rows + 1
+}
   
 nba_data
-nba_href
 ```
 
 
