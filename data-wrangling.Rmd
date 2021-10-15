@@ -78,8 +78,8 @@ things we need:
 total payroll of team by year
 total team wins for the year
 https://www.basketball-reference.com/
-each teams zipcode
-any data about zipcode.
+each teams zipcode DONE
+any data about zipcode DONE
 highest paid players:
 http://www.espn.com/nba/salaries/_/year/2020/seasontype/1
 stats for those players.
