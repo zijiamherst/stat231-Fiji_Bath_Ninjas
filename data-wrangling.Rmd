@@ -77,6 +77,7 @@ Get the payroll of each team for a certain year range.
 things we need:
 total payroll of team by year
 total team wins for the year
+https://www.basketball-reference.com/
 each teams zipcode
 any data about zipcode.
 highest paid players:
@@ -120,6 +121,14 @@ nba_data
 nba_href
 ```
 
+```{r}
+# convert the excel zip codes into csv
+library(readxl)
+nba_zip_codes <- read_excel("data/nba-zip-codes.xlsm")
+View(nba_zip_codes)
+
+#write.csv(nba_zip_codes, "data/")
+```
 
 # **Census Dataset** {-}
 
