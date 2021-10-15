@@ -126,6 +126,8 @@ nba_href
 library(readxl)
 nba_zip_codes <- read_excel("data/nba-zip-codes.xlsm")
 write.csv(nba_zip_codes, "data/nba_zip_codes.csv")
+zipcode_income <- read_excel("data/zipcodeavgsal.xlsm")
+write.csv(zipcode_income, "data/zipcode_income.csv")
 ```
 
 # **Census Dataset** {-}
