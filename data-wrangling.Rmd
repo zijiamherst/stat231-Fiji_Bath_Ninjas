@@ -129,9 +129,9 @@ for(i in years){
 }
 
 # add link for each team on each season
-for(i in nba_data$link_bref){
+for(i in 1:nrow(nba_data)){
   # set url
-  url <- i
+  url <- nba_data$link_bref[i]
   
   # get the team names as a vector
   team_name <- url %>%
@@ -154,19 +154,68 @@ for(i in nba_data$link_bref){
   for(x in team_link){
     team_stats <- x %>%
       read_html() %>%
-      html_elements("#team_misc") %>%
-      html_table()
+      html_elements("#meta > div:nth-child(2) > p:nth-child(3)") %>%
+      html_text() %>%
+      str_split("\n") %>%
+      pluck(1) %>%
+      str_split(",") %>%
+      pluck(4) %>%
+      pluck(1)
+      
+    team_stats <- sub("      ", "", team_stats)
+    
+    w = as.numeric(team_stats %>%
+      str_split("-") %>%
+      pluck(1) %>%
+      pluck(1))
+    l = as.numeric(team_stats %>%
+      str_split("-") %>%
+      pluck(1) %>%
+      pluck(2))
+    
+    team_winper = w/(w+l)
+    
+    
   }
   
 }
 
 team_link <- "https://www.basketball-reference.com/teams/PHI/1991.html"
 
-team_stats <- team_link %>%
-      read_html() %>%
-      html_elements("#salaries2 > tbody > tr:nth-child(1) > td.left > a")
+salary <- team_link %>%
+  read_html()
 
-team_stats
+salary <- salary %>%
+  html_elements("#salary2")
+
+salary
+
+team_stats <- team_link %>%
+  read_html() %>%
+  html_elements("#meta > div:nth-child(2) > p:nth-child(3)") %>%
+  html_text() %>%
+  str_split("\n") %>%
+  pluck(1) %>%
+  str_split(",") %>%
+  pluck(4) %>%
+  pluck(1)
+  
+team_stats <- sub("      ", "", team_stats)
+
+w = as.numeric(team_stats %>%
+  str_split("-") %>%
+  pluck(1) %>%
+  pluck(1))
+l = as.numeric(team_stats %>%
+  str_split("-") %>%
+  pluck(1) %>%
+  pluck(2))
+
+team_winper = w/(w+l)
+
+team_winper
+typeof(team_stats)
+length(team_stats)
 ```
 
 ```{r}
