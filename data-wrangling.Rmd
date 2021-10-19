@@ -128,8 +128,8 @@ team_info <- data_frame(season = character(),
                         #abr = character(),
                         w = integer(),
                         l = integer(),
-                        winper = numeric()
-                        #total_salary = numeric()
+                        winper = numeric(),
+                        total_salary = numeric()
                         )
 
 # manual urls per season
@@ -172,9 +172,12 @@ for(i in 1:nrow(nba_data)){
     #get team name
     teamname <- teams$name[x]
     
+    page <- url %>%
+      read_html() 
+    
     # get win % for each team
-    team_stats <- url %>%
-      read_html() %>%
+    # take the right element
+    team_stats <- page %>%
       html_elements("#meta > div:nth-child(2) > p:nth-child(3)") %>%
       html_text() %>%
       str_split("\n") %>%
@@ -182,9 +185,11 @@ for(i in 1:nrow(nba_data)){
       str_split(",") %>%
       pluck(4) %>%
       pluck(1)
-      
+    #formatting
+    
     team_stats <- sub("      ", "", team_stats)
     
+    #calculate
     win = as.numeric(team_stats %>%
       str_split("-") %>%
       pluck(1) %>%
@@ -194,15 +199,40 @@ for(i in 1:nrow(nba_data)){
       pluck(1) %>%
       pluck(2))
     
-    team_winper = w/(w+l)
+    team_winper = win/(win+lose)
     
-    df <- data_frame(season = nba_data$season[i],
+    #salary total
+    salary <- page %>%
+      html_elements("#all_salaries2")
+    
+    salary <- as.character(salary)%>%
+      substring(gregexpr("<!--",as.character(salary))) %>%
+      substring(5) %>% 
+      minimal_html()%>%
+      html_nodes("table") %>%
+      pluck(1) %>%
+      html_table()
+    
+    salary_clean <- salary %>%
+      rename(name = "") %>%
+      mutate(Salary = as.numeric(
+        str_remove_all(
+          substring(Salary,2), ",")
+        )
+      ) %>%
+      janitor::clean_names()
+    
+    total_salary = sum(salary_clean$salary)
+    
+    #add to big data frame
+    df <- data_frame(
+          season = nba_data$season[i],
           team = teamname,
           #abr = character(),
           w = win,
           l = lose,
-          winper = team_winper
-          #total_salary = numeric()
+          winper = team_winper,
+          total_salary = total_salary
           )
     
     team_info <- rbind(team_info,df)
@@ -210,50 +240,48 @@ for(i in 1:nrow(nba_data)){
   
 }
 
+team_info_clean <- team_info %>%
+  unique() %>%
+  arrange(season,desc(winper))
 
+write_csv(team_info_clean, "data/team_info.csv")
 # test code
-team_info
-
-df
-
-nba_data
-
-team_link <- "https://www.basketball-reference.com/teams/PHI/1991.html"
-
-salary <- team_link %>%
-  read_html()
-
-salary <- salary %>%
-  html_elements("#salary2")
-
-salary
-
-team_stats <- team_link %>%
-  read_html() %>%
-  html_elements("#meta > div:nth-child(2) > p:nth-child(3)") %>%
-  html_text() %>%
-  str_split("\n") %>%
-  pluck(1) %>%
-  str_split(",") %>%
-  pluck(4) %>%
-  pluck(1)
-  
-team_stats <- sub("      ", "", team_stats)
-
-w = as.numeric(team_stats %>%
-  str_split("-") %>%
-  pluck(1) %>%
-  pluck(1))
-l = as.numeric(team_stats %>%
-  str_split("-") %>%
-  pluck(1) %>%
-  pluck(2))
-
-team_winper = w/(w+l)
-
-team_winper
-typeof(team_stats)
-length(team_stats)
+# 
+# team_info %>%
+#   unique() %>%
+#   arrange(winper)
+# 
+# df
+# 
+# team_info_clean
+# nba_data
+# 
+# team_link <- "https://www.basketball-reference.com/teams/SEA/1991.html#all_salaries2"
+# 
+# salary <- team_link %>%
+#   read_html() %>%
+#   html_elements("#all_salaries2")
+# 
+# salary <- as.character(salary)%>%
+#   substring(gregexpr("<!--",as.character(salary))) %>%
+#   substring(5) %>%
+#   minimal_html()%>%
+#   html_nodes("table") %>%
+#   pluck(1) %>%
+#   html_table()
+# 
+# salary_clean <- salary %>%
+#   rename(name = "") %>%
+#   mutate(Salary = as.numeric(
+#     str_remove_all(
+#       substring(Salary,2), ",")
+#     )
+#   )%>%
+#   janitor::clean_names()
+# 
+# 
+# sum(salary_clean$salary)
+# 
 # test code
 ```
 
