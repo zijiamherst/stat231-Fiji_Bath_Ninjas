@@ -56,6 +56,8 @@ library(tidyverse)
 library(kableExtra)
 library(robotstxt) 
 library(rvest)
+library(readxl)
+library(dplyr)
 
 # set code chunk defaults
 knitr::opts_chunk$set(tidy = F, # display code as typed
@@ -77,7 +79,7 @@ Get the payroll of each team for a certain year range.
 
 things we need:
 total payroll of team by year
-total team wins for the year
+total team % for the year
 https://www.basketball-reference.com/
 each teams zipcode DONE
 any data about zipcode DONE
@@ -120,6 +122,16 @@ nba_data <- nba_url %>%
   select("season") %>%
   mutate(link_bref = "") 
 
+# initialize big data frame
+team_info <- data_frame(season = character(),
+                        team = character(),
+                        #abr = character(),
+                        w = integer(),
+                        l = integer(),
+                        winper = numeric()
+                        #total_salary = numeric()
+                        )
+
 # manual urls per season
 rows = 1
 years = 2021:1991
@@ -150,9 +162,18 @@ for(i in 1:nrow(nba_data)){
     team_link[x] <- paste("https://www.basketball-reference.com",team_link[x],sep = "")
   }
   
-  # get win % for each team
-  for(x in team_link){
-    team_stats <- x %>%
+  teams <- data_frame(name = team_name, link = team_link)
+  
+  # go through each team
+  for(x in 1:nrow(teams)){
+    # get link
+    url <- teams$link[x]
+    
+    #get team name
+    teamname <- teams$name[x]
+    
+    # get win % for each team
+    team_stats <- url %>%
       read_html() %>%
       html_elements("#meta > div:nth-child(2) > p:nth-child(3)") %>%
       html_text() %>%
@@ -164,21 +185,38 @@ for(i in 1:nrow(nba_data)){
       
     team_stats <- sub("      ", "", team_stats)
     
-    w = as.numeric(team_stats %>%
+    win = as.numeric(team_stats %>%
       str_split("-") %>%
       pluck(1) %>%
       pluck(1))
-    l = as.numeric(team_stats %>%
+    lose = as.numeric(team_stats %>%
       str_split("-") %>%
       pluck(1) %>%
       pluck(2))
     
     team_winper = w/(w+l)
     
+    df <- data_frame(season = nba_data$season[i],
+          team = teamname,
+          #abr = character(),
+          w = win,
+          l = lose,
+          winper = team_winper
+          #total_salary = numeric()
+          )
     
+    team_info <- rbind(team_info,df)
   }
   
 }
+
+
+# test code
+team_info
+
+df
+
+nba_data
 
 team_link <- "https://www.basketball-reference.com/teams/PHI/1991.html"
 
@@ -216,6 +254,7 @@ team_winper = w/(w+l)
 team_winper
 typeof(team_stats)
 length(team_stats)
+# test code
 ```
 
 ```{r}
@@ -227,6 +266,7 @@ library(readxl)
 
 nba_zip_codes <- read_excel("data/nba-zip-codes.xlsm")
 
+# source: incomebyzipcode.com
 zipcode_income <- read_excel("data/zipcodeavgsal.xlsm")
 
 
