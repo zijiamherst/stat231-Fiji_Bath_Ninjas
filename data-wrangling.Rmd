@@ -288,6 +288,89 @@ write.csv(nba_city_income, "data/nba_city_income.csv")
 # from basketball reference
 nba_salary <- read_excel("data/nba_salary.xlsm")
 write.csv(nba_salary, "data/nba_salary.csv")
+
+#to create the codes
+nba_salary$codes <- sapply(strsplit(as.character(nba_salary$Player), "\\\\"),"[", 3)
+#to rename the players to just their name
+nba_salary$Player <- sapply(strsplit(as.character(nba_salary$Player), "\\\\"),"[", 1)
+head(nba_salary)
+#only need certain columns
+nba_salary_clean <- nba_salary %>%
+  select(Rk, Player, Tm, "2021-22", codes) %>%
+  #renamed the salary column
+  rename(Salary = "2021-22") %>%
+  #taking out Toronto because of a lack of data
+  filter(Tm != "TOR") %>%
+# adding in links
+  mutate( links =
+            paste("https://www.basketball-reference.com/players/", 
+                  substring(codes, 1, 1),
+                  "/",
+                  codes,
+                  ".html",
+                  sep = ""),
+          #adding in variables for player stats
+          games = 0,
+          points = 0,
+          rebounds = 0,
+          assists = 0
+          )
+#creating vectors for each stat
+games = c()
+points = c()
+rebounds = c()
+assists = c()
+#using a for loop to go through each player and get his stats
+for(i in 1:nrow(nba_salary_clean)){
+  #getting url and storing the finsihed html in a variable
+  url <- nba_salary_clean$links[i]
+  page <- url %>%
+    read_html()
+  #finding each statistic
+  games[i] <- page %>%
+    html_elements("#info > div.stats_pullout > div.p1 > div:nth-child(1) > p:nth-child(2)") %>%
+    html_text()
+  #checking if the value is blank and setting to 0 if so.
+  if(games[i] == ""){
+    games[i] = "0"
+  }
+  #adding it to our main dataset
+  nba_salary_clean$games[i] = as.integer(games[i])
+  
+  #points (same as game just for points)
+  #only thing that is different is url
+  points[i] <- page %>%
+    html_elements("#info > div.stats_pullout > div.p1 > div:nth-child(2) > p:nth-child(2)") %>%
+    html_text()
+  if(points[i] == ""){
+    points[i] = "0"
+  }
+  nba_salary_clean$points[i] = as.integer(points[i])
+  
+  #rebounds (same as game just for rebounds)
+  #only thing that is different is url
+  rebounds[i] <- page %>%
+    html_elements("#info > div.stats_pullout > div.p1 > div:nth-child(3) > p:nth-child(2)") %>%
+    html_text()
+  if(rebounds[i] == ""){
+    rebounds[i] = "0"
+  }
+  nba_salary_clean$rebounds[i] = as.integer(rebounds[i])
+  
+  #assists (same as game just for assists)
+  #only thing that is different is url
+  assists[i] <- page %>%
+    html_elements("#info > div.stats_pullout > div.p1 > div:nth-child(4) > p:nth-child(2)") %>%
+    html_text()
+  if(assists[i] == ""){
+    assists[i] = "0"
+  }
+  nba_salary_clean$assists[i] = as.integer(assists[i])
+}
+nba_salary_master <- nba_city_income %>%
+  inner_join(nba_salary_clean, by = c("abbreviations" = "Tm"))
+write_csv(nba_salary_master, "data/nba_salary_master.csv")
+
 ```
 
 ```{r}
