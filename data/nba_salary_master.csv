@@ -1,0 +1,283 @@
+team,abbreviations,zip,med_sal,Rk,Player,Salary,codes,links,games,points,rebounds,assists
+Philadelphia 76ers,PHI,19120,15015,13,Tobias Harris,36000000,harrito02,https://www.basketball-reference.com/players/h/harrito02.html,62,19,6,3
+Philadelphia 76ers,PHI,19120,15015,22,Ben Simmons,31590000,simmobe01,https://www.basketball-reference.com/players/s/simmobe01.html,58,14,7,6
+Philadelphia 76ers,PHI,19120,15015,24,Joel Embiid,31579390,embiijo01,https://www.basketball-reference.com/players/e/embiijo01.html,51,28,10,2
+Philadelphia 76ers,PHI,19120,15015,129,Danny Green,10000000,greenda02,https://www.basketball-reference.com/players/g/greenda02.html,69,9,3,1
+Philadelphia 76ers,PHI,19120,15015,162,Seth Curry,8186047,curryse01,https://www.basketball-reference.com/players/c/curryse01.html,57,12,2,2
+Philadelphia 76ers,PHI,19120,15015,231,Furkan Korkmaz,4629630,korkmfu01,https://www.basketball-reference.com/players/k/korkmfu01.html,55,9,2,1
+Philadelphia 76ers,PHI,19120,15015,281,Georges Niang,3300000,niangge01,https://www.basketball-reference.com/players/n/niangge01.html,72,6,2,0
+Philadelphia 76ers,PHI,19120,15015,299,Matisse Thybulle,2840160,thybuma01,https://www.basketball-reference.com/players/t/thybuma01.html,65,3,1,1
+Brooklyn Nets,BRK,11226,28735,4,James Harden,43848000,hardeja01,https://www.basketball-reference.com/players/h/hardeja01.html,44,24,7,10
+Brooklyn Nets,BRK,11226,28735,7,Kevin Durant,40918900,duranke01,https://www.basketball-reference.com/players/d/duranke01.html,35,26,7,5
+Brooklyn Nets,BRK,11226,28735,17,Kyrie Irving,34916200,irvinky01,https://www.basketball-reference.com/players/i/irvinky01.html,54,26,4,6
+Brooklyn Nets,BRK,11226,28735,73,Joe Harris,17357143,harrijo01,https://www.basketball-reference.com/players/h/harrijo01.html,69,14,3,1
+Brooklyn Nets,BRK,11226,28735,194,Patty Mills,5890000,millspa02,https://www.basketball-reference.com/players/m/millspa02.html,68,10,1,2
+Brooklyn Nets,BRK,11226,28735,226,Bruce Brown,4736102,brownbr01,https://www.basketball-reference.com/players/b/brownbr01.html,65,8,5,1
+Brooklyn Nets,BRK,11226,28735,268,Landry Shamet,3768342,shamela01,https://www.basketball-reference.com/players/s/shamela01.html,61,9,1,1
+Milwaukee Bucks,MIL,53215,16897,8,Giannis Antetokounmpo,39344970,antetgi01,https://www.basketball-reference.com/players/a/antetgi01.html,61,28,11,5
+Milwaukee Bucks,MIL,53215,16897,14,Khris Middleton,35500000,middlkh01,https://www.basketball-reference.com/players/m/middlkh01.html,68,20,6,5
+Milwaukee Bucks,MIL,53215,16897,31,Jrue Holiday,30133333,holidjr01,https://www.basketball-reference.com/players/h/holidjr01.html,59,17,4,6
+Milwaukee Bucks,MIL,53215,16897,101,Brook Lopez,13302325,lopezbr01,https://www.basketball-reference.com/players/l/lopezbr01.html,70,12,5,0
+Milwaukee Bucks,MIL,53215,16897,205,Pat Connaughton,5333333,connapa01,https://www.basketball-reference.com/players/c/connapa01.html,69,6,4,1
+Milwaukee Bucks,MIL,53215,16897,228,Donte DiVincenzo,4675830,divindo01,https://www.basketball-reference.com/players/d/divindo01.html,66,10,5,3
+Milwaukee Bucks,MIL,53215,16897,241,Bobby Portis,8151750,portibo01,https://www.basketball-reference.com/players/p/portibo01.html,66,11,7,1
+Milwaukee Bucks,MIL,53215,16897,249,Grayson Allen,4054695,allengr01,https://www.basketball-reference.com/players/a/allengr01.html,50,10,3,2
+Milwaukee Bucks,MIL,53215,16897,254,George Hill,4000000,hillge01,https://www.basketball-reference.com/players/h/hillge01.html,30,8,2,2
+Milwaukee Bucks,MIL,53215,16897,266,Bobby Portis,8151750,portibo01,https://www.basketball-reference.com/players/p/portibo01.html,66,11,7,1
+Milwaukee Bucks,MIL,53215,16897,287,Jon Leuer,3169347,leuerjo01,https://www.basketball-reference.com/players/l/leuerjo01.html,0,0,0,0
+New York Knicks,NYK,10001,88795,57,Julius Randle,19800000,randlju01,https://www.basketball-reference.com/players/r/randlju01.html,71,24,10,6
+New York Knicks,NYK,10001,88795,65,Evan Fournier,18139535,fournev01,https://www.basketball-reference.com/players/f/fournev01.html,42,17,3,3
+New York Knicks,NYK,10001,88795,100,Derrick Rose,13445120,rosede01,https://www.basketball-reference.com/players/r/rosede01.html,50,14,2,4
+New York Knicks,NYK,10001,88795,140,Alec Burks,9536000,burksal01,https://www.basketball-reference.com/players/b/burksal01.html,49,12,4,2
+New York Knicks,NYK,10001,88795,147,Nerlens Noel,8800000,noelne01,https://www.basketball-reference.com/players/n/noelne01.html,64,5,6,0
+New York Knicks,NYK,10001,88795,151,Kemba Walker,8729020,walkeke02,https://www.basketball-reference.com/players/w/walkeke02.html,43,19,4,4
+New York Knicks,NYK,10001,88795,153,RJ Barrett,8623920,barrerj01,https://www.basketball-reference.com/players/b/barrerj01.html,72,17,5,3
+New York Knicks,NYK,10001,88795,185,Joakim Noah,6431666,noahjo01,https://www.basketball-reference.com/players/n/noahjo01.html,0,0,0,0
+New York Knicks,NYK,10001,88795,196,Kevin Knox,5845978,knoxke01,https://www.basketball-reference.com/players/k/knoxke01.html,42,3,1,0
+New York Knicks,NYK,10001,88795,211,Obi Toppin,5105160,toppiob01,https://www.basketball-reference.com/players/t/toppiob01.html,62,4,2,0
+New York Knicks,NYK,10001,88795,223,Taj Gibson,4910000,gibsota01,https://www.basketball-reference.com/players/g/gibsota01.html,45,5,5,0
+Atlanta Hawks,ATL,30043,31430,47,John Collins,23000000,collijo01,https://www.basketball-reference.com/players/c/collijo01.html,63,17,7,1
+Atlanta Hawks,ATL,30043,31430,53,Danilo Gallinari,20475000,gallida01,https://www.basketball-reference.com/players/g/gallida01.html,51,13,4,1
+Atlanta Hawks,ATL,30043,31430,68,Bogdan Bogdanovi,18000000,bogdabo01,https://www.basketball-reference.com/players/b/bogdabo01.html,44,16,3,3
+Atlanta Hawks,ATL,30043,31430,75,Clint Capela,17103448,capelca01,https://www.basketball-reference.com/players/c/capelca01.html,63,15,14,0
+Atlanta Hawks,ATL,30043,31430,155,Delon Wright,8526316,wrighde01,https://www.basketball-reference.com/players/w/wrighde01.html,63,10,4,4
+Atlanta Hawks,ATL,30043,31430,159,Trae Young,8326471,youngtr01,https://www.basketball-reference.com/players/y/youngtr01.html,63,25,3,9
+Atlanta Hawks,ATL,30043,31430,167,De'Andre Hunter,7775400,huntede01,https://www.basketball-reference.com/players/h/huntede01.html,23,15,4,1
+Atlanta Hawks,ATL,30043,31430,189,Onyeka Okongwu,6104280,okongon01,https://www.basketball-reference.com/players/o/okongon01.html,50,4,3,0
+Atlanta Hawks,ATL,30043,31430,218,Lou Williams,5000000,willilo02,https://www.basketball-reference.com/players/w/willilo02.html,66,11,2,3
+Atlanta Hawks,ATL,30043,31430,229,Cam Reddish,4670160,reddica01,https://www.basketball-reference.com/players/r/reddica01.html,26,11,4,1
+Atlanta Hawks,ATL,30043,31430,243,Kevin Huerter,4253357,huertke01,https://www.basketball-reference.com/players/h/huertke01.html,69,11,3,3
+Atlanta Hawks,ATL,30043,31430,256,Gorgui Dieng,4000000,dienggo01,https://www.basketball-reference.com/players/d/dienggo01.html,38,6,3,1
+Miami Heat,MIA,33024,25015,12,Jimmy Butler,36016200,butleji01,https://www.basketball-reference.com/players/b/butleji01.html,52,21,6,7
+Miami Heat,MIA,33024,25015,37,Bam Adebayo,28103550,adebaba01,https://www.basketball-reference.com/players/a/adebaba01.html,64,18,9,5
+Miami Heat,MIA,33024,25015,41,Kyle Lowry,26984128,lowryky01,https://www.basketball-reference.com/players/l/lowryky01.html,46,17,5,7
+Miami Heat,MIA,33024,25015,84,Duncan Robinson,15560000,robindu01,https://www.basketball-reference.com/players/r/robindu01.html,72,13,3,1
+Miami Heat,MIA,33024,25015,90,Andre Iguodala,17641691,iguodan01,https://www.basketball-reference.com/players/i/iguodan01.html,63,4,3,2
+Miami Heat,MIA,33024,25015,179,P.J. Tucker,7000000,tuckepj01,https://www.basketball-reference.com/players/t/tuckepj01.html,52,3,3,1
+Miami Heat,MIA,33024,25015,207,Ryan Anderson,5214584,anderry01,https://www.basketball-reference.com/players/a/anderry01.html,0,0,0,0
+Miami Heat,MIA,33024,25015,252,Tyler Herro,4004280,herroty01,https://www.basketball-reference.com/players/h/herroty01.html,54,15,5,3
+Miami Heat,MIA,33024,25015,307,Udonis Haslem,2641691,hasleud01,https://www.basketball-reference.com/players/h/hasleud01.html,1,4,1,0
+Miami Heat,MIA,33024,25015,308,Markieff Morris,2641691,morrima02,https://www.basketball-reference.com/players/m/morrima02.html,61,6,4,1
+Boston Celtics,BOS,02128,26569,39,Jayson Tatum,28103550,tatumja01,https://www.basketball-reference.com/players/t/tatumja01.html,64,26,7,4
+Boston Celtics,BOS,02128,26569,40,Al Horford,27000000,horfoal01,https://www.basketball-reference.com/players/h/horfoal01.html,28,14,6,3
+Boston Celtics,BOS,02128,26569,44,Jaylen Brown,24830357,brownja02,https://www.basketball-reference.com/players/b/brownja02.html,58,24,6,3
+Boston Celtics,BOS,02128,26569,93,Marcus Smart,14339285,smartma01,https://www.basketball-reference.com/players/s/smartma01.html,48,13,3,5
+Boston Celtics,BOS,02128,26569,116,Josh Richardson,11600000,richajo01,https://www.basketball-reference.com/players/r/richajo01.html,59,12,3,2
+Boston Celtics,BOS,02128,26569,265,Romeo Langford,3804360,langfro01,https://www.basketball-reference.com/players/l/langfro01.html,18,3,1,0
+Boston Celtics,BOS,02128,26569,272,Robert Williams,3661976,williro04,https://www.basketball-reference.com/players/w/williro04.html,52,8,6,1
+Boston Celtics,BOS,02128,26569,273,Aaron Nesmith,3631200,nesmiaa01,https://www.basketball-reference.com/players/n/nesmiaa01.html,46,4,2,0
+Utah Jazz,UTA,84120,21565,16,Rudy Gobert,35344828,goberru01,https://www.basketball-reference.com/players/g/goberru01.html,71,14,13,1
+Utah Jazz,UTA,84120,21565,38,Donovan Mitchell,28103550,mitchdo01,https://www.basketball-reference.com/players/m/mitchdo01.html,53,26,4,5
+Utah Jazz,UTA,84120,21565,51,Mike Conley,21000000,conlemi01,https://www.basketball-reference.com/players/c/conlemi01.html,51,16,3,6
+Utah Jazz,UTA,84120,21565,62,Bojan Bogdanovi,18700000,bogdabo02,https://www.basketball-reference.com/players/b/bogdabo02.html,72,17,3,1
+Utah Jazz,UTA,84120,21565,96,Joe Ingles,14000000,inglejo01,https://www.basketball-reference.com/players/i/inglejo01.html,67,12,3,4
+Utah Jazz,UTA,84120,21565,110,Jordan Clarkson,12420000,clarkjo01,https://www.basketball-reference.com/players/c/clarkjo01.html,68,18,4,2
+Utah Jazz,UTA,84120,21565,152,Royce O'Neale,8678571,onealro01,https://www.basketball-reference.com/players/o/onealro01.html,71,7,6,2
+Utah Jazz,UTA,84120,21565,193,Rudy Gay,5890000,gayru01,https://www.basketball-reference.com/players/g/gayru01.html,63,11,4,1
+Denver Nuggets,DEN,80219,20772,23,Jamal Murray,31590000,murraja01,https://www.basketball-reference.com/players/m/murraja01.html,48,21,4,4
+Denver Nuggets,DEN,80219,20772,30,Nikola Joki,30510423,jokicni01,https://www.basketball-reference.com/players/j/jokicni01.html,72,26,10,8
+Denver Nuggets,DEN,80219,20772,78,Aaron Gordon,16409091,gordoaa01,https://www.basketball-reference.com/players/g/gordoaa01.html,50,12,5,3
+Denver Nuggets,DEN,80219,20772,87,Will Barton,30264615,bartowi01,https://www.basketball-reference.com/players/b/bartowi01.html,56,12,4,3
+Denver Nuggets,DEN,80219,20772,91,Will Barton,30264615,bartowi01,https://www.basketball-reference.com/players/b/bartowi01.html,56,12,4,3
+Denver Nuggets,DEN,80219,20772,158,Monte Morris,8333333,morrimo01,https://www.basketball-reference.com/players/m/morrimo01.html,47,10,2,3
+Denver Nuggets,DEN,80219,20772,160,JaMychal Green,15852431,greenja01,https://www.basketball-reference.com/players/g/greenja01.html,58,8,4,0
+Denver Nuggets,DEN,80219,20772,169,JaMychal Green,15852431,greenja01,https://www.basketball-reference.com/players/g/greenja01.html,58,8,4,0
+Denver Nuggets,DEN,80219,20772,206,Michael Porter Jr.,5258735,portemi01,https://www.basketball-reference.com/players/p/portemi01.html,61,19,7,1
+Denver Nuggets,DEN,80219,20772,234,Jeff Green,4500000,greenje02,https://www.basketball-reference.com/players/g/greenje02.html,68,11,3,1
+Denver Nuggets,DEN,80219,20772,267,Facundo Campazzo,3804150,campafa01,https://www.basketball-reference.com/players/c/campafa01.html,65,6,2,3
+Los Angeles Clippers,LAC,90011,12931,9,Paul George,39344970,georgpa01,https://www.basketball-reference.com/players/g/georgpa01.html,54,23,6,5
+Los Angeles Clippers,LAC,90011,12931,10,Kawhi Leonard,39344900,leonaka01,https://www.basketball-reference.com/players/l/leonaka01.html,52,24,6,5
+Los Angeles Clippers,LAC,90011,12931,66,Eric Bledsoe,18125000,bledser01,https://www.basketball-reference.com/players/b/bledser01.html,71,12,3,3
+Los Angeles Clippers,LAC,90011,12931,83,Marcus Morris,15627907,morrima03,https://www.basketball-reference.com/players/m/morrima03.html,57,13,4,1
+Los Angeles Clippers,LAC,90011,12931,106,Luke Kennard,12727273,kennalu01,https://www.basketball-reference.com/players/k/kennalu01.html,63,8,2,1
+Los Angeles Clippers,LAC,90011,12931,124,Reggie Jackson,10384500,jacksre01,https://www.basketball-reference.com/players/j/jacksre01.html,67,10,2,3
+Los Angeles Clippers,LAC,90011,12931,132,Serge Ibaka,9742000,ibakase01,https://www.basketball-reference.com/players/i/ibakase01.html,41,11,6,1
+Los Angeles Clippers,LAC,90011,12931,171,Ivica Zubac,7518518,zubaciv01,https://www.basketball-reference.com/players/z/zubaciv01.html,72,9,7,1
+Los Angeles Clippers,LAC,90011,12931,261,Justise Winslow,16902439,winslju01,https://www.basketball-reference.com/players/w/winslju01.html,26,6,4,1
+Los Angeles Clippers,LAC,90011,12931,286,Nicolas Batum,12213507,batumni01,https://www.basketball-reference.com/players/b/batumni01.html,67,8,4,2
+Los Angeles Clippers,LAC,90011,12931,9,Paul George,39344970,georgpa01,https://www.basketball-reference.com/players/g/georgpa01.html,54,23,6,5
+Los Angeles Clippers,LAC,90011,12931,10,Kawhi Leonard,39344900,leonaka01,https://www.basketball-reference.com/players/l/leonaka01.html,52,24,6,5
+Los Angeles Clippers,LAC,90011,12931,66,Eric Bledsoe,18125000,bledser01,https://www.basketball-reference.com/players/b/bledser01.html,71,12,3,3
+Los Angeles Clippers,LAC,90011,12931,83,Marcus Morris,15627907,morrima03,https://www.basketball-reference.com/players/m/morrima03.html,57,13,4,1
+Los Angeles Clippers,LAC,90011,12931,106,Luke Kennard,12727273,kennalu01,https://www.basketball-reference.com/players/k/kennalu01.html,63,8,2,1
+Los Angeles Clippers,LAC,90011,12931,124,Reggie Jackson,10384500,jacksre01,https://www.basketball-reference.com/players/j/jacksre01.html,67,10,2,3
+Los Angeles Clippers,LAC,90011,12931,132,Serge Ibaka,9742000,ibakase01,https://www.basketball-reference.com/players/i/ibakase01.html,41,11,6,1
+Los Angeles Clippers,LAC,90011,12931,171,Ivica Zubac,7518518,zubaciv01,https://www.basketball-reference.com/players/z/zubaciv01.html,72,9,7,1
+Los Angeles Clippers,LAC,90011,12931,261,Justise Winslow,16902439,winslju01,https://www.basketball-reference.com/players/w/winslju01.html,26,6,4,1
+Los Angeles Clippers,LAC,90011,12931,286,Nicolas Batum,12213507,batumni01,https://www.basketball-reference.com/players/b/batumni01.html,67,8,4,2
+Dallas Mavericks,DAL,75217,36274,19,Kristaps Porzi,31650600,porzikr01,https://www.basketball-reference.com/players/p/porzikr01.html,43,20,8,1
+Dallas Mavericks,DAL,75217,36274,50,Tim Hardaway Jr.,21306816,hardati02,https://www.basketball-reference.com/players/h/hardati02.html,70,16,3,1
+Dallas Mavericks,DAL,75217,36274,119,Dwight Powell,11000000,poweldw01,https://www.basketball-reference.com/players/p/poweldw01.html,58,5,4,1
+Dallas Mavericks,DAL,75217,36274,127,Luka Don,10174391,doncilu01,https://www.basketball-reference.com/players/d/doncilu01.html,66,27,8,8
+Dallas Mavericks,DAL,75217,36274,139,Reggie Bullock,9536000,bullore01,https://www.basketball-reference.com/players/b/bullore01.html,65,10,3,1
+Dallas Mavericks,DAL,75217,36274,149,Maxi Kleber,8750000,klebima01,https://www.basketball-reference.com/players/k/klebima01.html,50,7,5,1
+Dallas Mavericks,DAL,75217,36274,246,Willie Cauley-Stein,4200000,caulewi01,https://www.basketball-reference.com/players/c/caulewi01.html,53,5,4,0
+Dallas Mavericks,DAL,75217,36274,255,Dorian Finney-Smith,4000000,finnedo01,https://www.basketball-reference.com/players/f/finnedo01.html,60,9,5,1
+Dallas Mavericks,DAL,75217,36274,280,Trey Burke,3333333,burketr01,https://www.basketball-reference.com/players/b/burketr01.html,62,6,0,1
+Dallas Mavericks,DAL,75217,36274,291,Sterling Brown,3000000,brownst02,https://www.basketball-reference.com/players/b/brownst02.html,51,8,4,1
+Dallas Mavericks,DAL,75217,36274,295,Josh Green,2957520,greenjo02,https://www.basketball-reference.com/players/g/greenjo02.html,39,2,2,0
+Los Angeles Lakers,LAL,90011,12931,3,Russell Westbrook,44211146,westbru01,https://www.basketball-reference.com/players/w/westbru01.html,65,22,11,11
+Los Angeles Lakers,LAL,90011,12931,6,LeBron James,41180544,jamesle01,https://www.basketball-reference.com/players/j/jamesle01.html,45,25,7,7
+Los Angeles Lakers,LAL,90011,12931,15,Anthony Davis,35361360,davisan02,https://www.basketball-reference.com/players/d/davisan02.html,36,21,7,3
+Los Angeles Lakers,LAL,90011,12931,141,Talen Horton-Tucker,9500000,hortota01,https://www.basketball-reference.com/players/h/hortota01.html,65,9,2,2
+Los Angeles Lakers,LAL,90011,12931,217,Kendrick Nunn,5000000,nunnke01,https://www.basketball-reference.com/players/n/nunnke01.html,56,14,3,2
+Los Angeles Lakers,LAL,90011,12931,219,Luol Deng,4990000,denglu01,https://www.basketball-reference.com/players/d/denglu01.html,0,0,0,0
+Los Angeles Lakers,LAL,90011,12931,3,Russell Westbrook,44211146,westbru01,https://www.basketball-reference.com/players/w/westbru01.html,65,22,11,11
+Los Angeles Lakers,LAL,90011,12931,6,LeBron James,41180544,jamesle01,https://www.basketball-reference.com/players/j/jamesle01.html,45,25,7,7
+Los Angeles Lakers,LAL,90011,12931,15,Anthony Davis,35361360,davisan02,https://www.basketball-reference.com/players/d/davisan02.html,36,21,7,3
+Los Angeles Lakers,LAL,90011,12931,141,Talen Horton-Tucker,9500000,hortota01,https://www.basketball-reference.com/players/h/hortota01.html,65,9,2,2
+Los Angeles Lakers,LAL,90011,12931,217,Kendrick Nunn,5000000,nunnke01,https://www.basketball-reference.com/players/n/nunnke01.html,56,14,3,2
+Los Angeles Lakers,LAL,90011,12931,219,Luol Deng,4990000,denglu01,https://www.basketball-reference.com/players/d/denglu01.html,0,0,0,0
+Portland Trail Blazers,POR,97229,57963,5,Damian Lillard,43750000,lillada01,https://www.basketball-reference.com/players/l/lillada01.html,67,28,4,7
+Portland Trail Blazers,POR,97229,57963,28,CJ McCollum,30864198,mccolcj01,https://www.basketball-reference.com/players/m/mccolcj01.html,47,23,3,4
+Portland Trail Blazers,POR,97229,57963,85,Norman Powell,15517242,powelno01,https://www.basketball-reference.com/players/p/powelno01.html,69,18,3,1
+Portland Trail Blazers,POR,97229,57963,105,Robert Covington,12975471,covinro01,https://www.basketball-reference.com/players/c/covinro01.html,70,8,6,1
+Portland Trail Blazers,POR,97229,57963,115,Jusuf Nurki,12000000,nurkiju01,https://www.basketball-reference.com/players/n/nurkiju01.html,37,11,9,3
+Portland Trail Blazers,POR,97229,57963,121,Larry Nance Jr.,10690909,nancela02,https://www.basketball-reference.com/players/n/nancela02.html,35,9,6,3
+Portland Trail Blazers,POR,97229,57963,260,Anfernee Simons,3938818,simonan01,https://www.basketball-reference.com/players/s/simonan01.html,64,7,2,1
+Portland Trail Blazers,POR,97229,57963,298,Andrew Nicholson,2844429,nichoan01,https://www.basketball-reference.com/players/n/nichoan01.html,0,0,0,0
+Portland Trail Blazers,POR,97229,57963,305,Patrick Patterson,3378757,pattepa01,https://www.basketball-reference.com/players/p/pattepa01.html,38,5,2,0
+Golden State Warriors,GSW,94601,39601,1,Stephen Curry,45780966,curryst01,https://www.basketball-reference.com/players/c/curryst01.html,63,32,5,5
+Golden State Warriors,GSW,94601,39601,11,Klay Thompson,37980720,thompkl01,https://www.basketball-reference.com/players/t/thompkl01.html,0,0,0,0
+Golden State Warriors,GSW,94601,39601,25,Andrew Wiggins,31579390,wiggian01,https://www.basketball-reference.com/players/w/wiggian01.html,71,18,4,2
+Golden State Warriors,GSW,94601,39601,45,Draymond Green,24026712,greendr01,https://www.basketball-reference.com/players/g/greendr01.html,63,7,7,8
+Golden State Warriors,GSW,94601,39601,143,James Wiseman,9166800,wisemja01,https://www.basketball-reference.com/players/w/wisemja01.html,39,11,5,0
+Golden State Warriors,GSW,94601,39601,209,Kevon Looney,5178572,looneke01,https://www.basketball-reference.com/players/l/looneke01.html,61,4,5,2
+Memphis Grizzlies,MEM,38109,14742,76,Steven Adams,17073171,adamsst01,https://www.basketball-reference.com/players/a/adamsst01.html,58,7,8,1
+Memphis Grizzlies,MEM,38109,14742,104,Justise Winslow,16902439,winslju01,https://www.basketball-reference.com/players/w/winslju01.html,26,6,4,1
+Memphis Grizzlies,MEM,38109,14742,111,Dillon Brooks,12200000,brookdi01,https://www.basketball-reference.com/players/b/brookdi01.html,67,17,2,2
+Memphis Grizzlies,MEM,38109,14742,131,Kyle Anderson,9937150,anderky01,https://www.basketball-reference.com/players/a/anderky01.html,69,12,5,3
+Memphis Grizzlies,MEM,38109,14742,138,Ja Morant,9603360,moranja01,https://www.basketball-reference.com/players/m/moranja01.html,63,19,4,7
+Memphis Grizzlies,MEM,38109,14742,142,Jaren Jackson Jr.,9180560,jacksja02,https://www.basketball-reference.com/players/j/jacksja02.html,11,14,5,1
+Memphis Grizzlies,MEM,38109,14742,156,De'Anthony Melton,8437500,meltode01,https://www.basketball-reference.com/players/m/meltode01.html,52,9,3,2
+Memphis Grizzlies,MEM,38109,14742,170,Tyus Jones,7522200,jonesty01,https://www.basketball-reference.com/players/j/jonesty01.html,70,6,2,3
+Memphis Grizzlies,MEM,38109,14742,186,Jarrett Culver,6395160,culveja01,https://www.basketball-reference.com/players/c/culveja01.html,34,5,3,0
+Memphis Grizzlies,MEM,38109,14742,213,Kris Dunn,5005350,dunnkr01,https://www.basketball-reference.com/players/d/dunnkr01.html,4,1,1,0
+Memphis Grizzlies,MEM,38109,14742,225,Rajon Rondo,2641691,rondora01,https://www.basketball-reference.com/players/r/rondora01.html,45,5,2,4
+Memphis Grizzlies,MEM,38109,14742,302,Brandon Clarke,2726880,clarkbr01,https://www.basketball-reference.com/players/c/clarkbr01.html,59,10,5,1
+Washington Wizards,WAS,20011,38579,18,Bradley Beal,34502130,bealbr01,https://www.basketball-reference.com/players/b/bealbr01.html,60,31,4,4
+Washington Wizards,WAS,20011,38579,74,Spencer Dinwiddie,17142857,dinwisp01,https://www.basketball-reference.com/players/d/dinwisp01.html,3,6,4,3
+Washington Wizards,WAS,20011,38579,80,Davis Bertans,16000000,bertada01,https://www.basketball-reference.com/players/b/bertada01.html,57,11,2,0
+Washington Wizards,WAS,20011,38579,102,Kentavious Caldwell-Pope,13038862,caldwke01,https://www.basketball-reference.com/players/c/caldwke01.html,67,9,2,1
+Washington Wizards,WAS,20011,38579,103,Kyle Kuzma,13000000,kuzmaky01,https://www.basketball-reference.com/players/k/kuzmaky01.html,68,12,6,1
+Washington Wizards,WAS,20011,38579,135,Montrezl Harrell,9720900,harremo01,https://www.basketball-reference.com/players/h/harremo01.html,69,13,6,1
+Washington Wizards,WAS,20011,38579,150,Thomas Bryant,8730159,bryanth01,https://www.basketball-reference.com/players/b/bryanth01.html,10,14,6,1
+Washington Wizards,WAS,20011,38579,220,Rui Hachimura,4916160,hachiru01,https://www.basketball-reference.com/players/h/hachiru01.html,57,13,5,1
+Washington Wizards,WAS,20011,38579,227,Deni Avdija,4692840,avdijde01,https://www.basketball-reference.com/players/a/avdijde01.html,54,6,4,1
+Washington Wizards,WAS,20011,38579,257,Aaron Holiday,3980551,holidaa01,https://www.basketball-reference.com/players/h/holidaa01.html,66,7,1,1
+Indiana Pacers,IND,46227,36452,49,Malcolm Brogdon,21700000,brogdma01,https://www.basketball-reference.com/players/b/brogdma01.html,56,21,5,5
+Indiana Pacers,IND,46227,36452,63,Domantas Sabonis,18562500,sabondo01,https://www.basketball-reference.com/players/s/sabondo01.html,62,20,12,6
+Indiana Pacers,IND,46227,36452,67,Myles Turner,18000000,turnemy01,https://www.basketball-reference.com/players/t/turnemy01.html,47,12,6,1
+Indiana Pacers,IND,46227,36452,71,Caris LeVert,17500000,leverca01,https://www.basketball-reference.com/players/l/leverca01.html,47,20,4,5
+Indiana Pacers,IND,46227,36452,107,T.J. Warren,12690000,warretj01,https://www.basketball-reference.com/players/w/warretj01.html,4,15,3,1
+Indiana Pacers,IND,46227,36452,122,Jeremy Lamb,10500000,lambje01,https://www.basketball-reference.com/players/l/lambje01.html,36,10,3,1
+Indiana Pacers,IND,46227,36452,172,T.J. McConnell,7500000,mccontj01,https://www.basketball-reference.com/players/m/mccontj01.html,69,8,3,6
+Indiana Pacers,IND,46227,36452,190,Justin Holiday,6006420,holidju01,https://www.basketball-reference.com/players/h/holidju01.html,72,10,3,1
+Indiana Pacers,IND,46227,36452,224,Torrey Craig,4878049,craigto01,https://www.basketball-reference.com/players/c/craigto01.html,50,5,3,1
+Indiana Pacers,IND,46227,36452,289,Goga Bitadze,3098400,bitadgo01,https://www.basketball-reference.com/players/b/bitadgo01.html,45,5,3,0
+Charlotte Hornets,CHO,28269,33515,33,Gordon Hayward,29900000,haywago01,https://www.basketball-reference.com/players/h/haywago01.html,44,19,5,4
+Charlotte Hornets,CHO,28269,33515,69,Terry Rozier,17905263,roziete01,https://www.basketball-reference.com/players/r/roziete01.html,69,20,4,4
+Charlotte Hornets,CHO,28269,33515,113,Kelly Oubre Jr.,12000000,oubreke01,https://www.basketball-reference.com/players/o/oubreke01.html,55,15,6,1
+Charlotte Hornets,CHO,28269,33515,144,Nicolas Batum,12213507,batumni01,https://www.basketball-reference.com/players/b/batumni01.html,67,8,4,2
+Charlotte Hornets,CHO,28269,33515,161,LaMelo Ball,8231760,ballla01,https://www.basketball-reference.com/players/b/ballla01.html,51,15,5,6
+Charlotte Hornets,CHO,28269,33515,163,Mason Plumlee,8137500,plumlma01,https://www.basketball-reference.com/players/p/plumlma01.html,56,10,9,3
+Charlotte Hornets,CHO,28269,33515,203,Miles Bridges,5421493,bridgmi02,https://www.basketball-reference.com/players/b/bridgmi02.html,66,12,6,2
+Charlotte Hornets,CHO,28269,33515,235,Ish Smith,4500000,smithis01,https://www.basketball-reference.com/players/s/smithis01.html,44,6,3,3
+Charlotte Hornets,CHO,28269,33515,245,P.J. Washington,4215120,washipj01,https://www.basketball-reference.com/players/w/washipj01.html,64,12,6,2
+San Antonio Spurs,SAS,78245,25894,86,Dejounte Murray,15428571,murrade01,https://www.basketball-reference.com/players/m/murrade01.html,67,15,7,5
+San Antonio Spurs,SAS,78245,25894,88,Derrick White,15178571,whitede01,https://www.basketball-reference.com/players/w/whitede01.html,36,15,3,3
+San Antonio Spurs,SAS,78245,25894,95,Thaddeus Young,14190000,youngth01,https://www.basketball-reference.com/players/y/youngth01.html,68,12,6,4
+San Antonio Spurs,SAS,78245,25894,98,Doug McDermott,13750000,mcderdo01,https://www.basketball-reference.com/players/m/mcderdo01.html,66,13,3,1
+San Antonio Spurs,SAS,78245,25894,126,Al-Farouq Aminu,10183800,aminual01,https://www.basketball-reference.com/players/a/aminual01.html,23,4,4,1
+San Antonio Spurs,SAS,78245,25894,148,Jakob Poeltl,8750000,poeltja01,https://www.basketball-reference.com/players/p/poeltja01.html,69,8,7,1
+San Antonio Spurs,SAS,78245,25894,180,Zach Collins,6984127,colliza01,https://www.basketball-reference.com/players/c/colliza01.html,0,0,0,0
+San Antonio Spurs,SAS,78245,25894,233,Bryn Forbes,4500000,forbebr01,https://www.basketball-reference.com/players/f/forbebr01.html,70,10,1,0
+San Antonio Spurs,SAS,78245,25894,237,Lonnie Walker,4447896,walkelo01,https://www.basketball-reference.com/players/w/walkelo01.html,60,11,2,1
+San Antonio Spurs,SAS,78245,25894,244,Devin Vassell,4235160,vassede01,https://www.basketball-reference.com/players/v/vassede01.html,62,5,2,0
+San Antonio Spurs,SAS,78245,25894,251,Chandler Hutchison,NA,hutchch01,https://www.basketball-reference.com/players/h/hutchch01.html,25,4,3,0
+Chicago Bulls,CHI,60629,14295,42,DeMar DeRozan,26984127,derozde01,https://www.basketball-reference.com/players/d/derozde01.html,61,21,4,6
+Chicago Bulls,CHI,60629,14295,46,Nikola Vu,24000000,vucevni01,https://www.basketball-reference.com/players/v/vucevni01.html,70,23,11,3
+Chicago Bulls,CHI,60629,14295,58,Lonzo Ball,19767442,balllo01,https://www.basketball-reference.com/players/b/balllo01.html,55,14,4,5
+Chicago Bulls,CHI,60629,14295,60,Zach LaVine,19500000,lavinza01,https://www.basketball-reference.com/players/l/lavinza01.html,58,27,5,4
+Chicago Bulls,CHI,60629,14295,133,Derrick Jones Jr.,9731707,jonesde02,https://www.basketball-reference.com/players/j/jonesde02.html,58,6,3,0
+Chicago Bulls,CHI,60629,14295,154,Alex Caruso,8604651,carusal01,https://www.basketball-reference.com/players/c/carusal01.html,58,6,2,2
+Chicago Bulls,CHI,60629,14295,173,Patrick Williams,7422000,willipa01,https://www.basketball-reference.com/players/w/willipa01.html,71,9,4,1
+Chicago Bulls,CHI,60629,14295,197,Coby White,5837760,whiteco01,https://www.basketball-reference.com/players/w/whiteco01.html,69,15,4,4
+Chicago Bulls,CHI,60629,14295,210,Troy Brown Jr.,5170564,browntr01,https://www.basketball-reference.com/players/b/browntr01.html,34,4,3,0
+Chicago Bulls,CHI,60629,14295,294,Ryan Arcidiacono,4789256,arcidry01,https://www.basketball-reference.com/players/a/arcidry01.html,44,3,1,1
+New Orleans Pelicans,NOP,70726,29593,35,Brandon Ingram,29467800,ingrabr01,https://www.basketball-reference.com/players/i/ingrabr01.html,61,23,4,4
+New Orleans Pelicans,NOP,70726,29593,97,Jonas Valan,14000000,valanjo01,https://www.basketball-reference.com/players/v/valanjo01.html,62,17,12,1
+New Orleans Pelicans,NOP,70726,29593,114,Josh Hart,12000000,hartjo01,https://www.basketball-reference.com/players/h/hartjo01.html,47,9,8,2
+New Orleans Pelicans,NOP,70726,29593,118,Devonte' Graham,11000000,grahade01,https://www.basketball-reference.com/players/g/grahade01.html,55,14,2,5
+New Orleans Pelicans,NOP,70726,29593,120,Zion Williamson,10733400,willizi01,https://www.basketball-reference.com/players/w/willizi01.html,61,27,7,3
+New Orleans Pelicans,NOP,70726,29593,130,TomSatoransk,10000000,satorto01,https://www.basketball-reference.com/players/s/satorto01.html,58,7,2,4
+New Orleans Pelicans,NOP,70726,29593,204,Jaxson Hayes,5348280,hayesja02,https://www.basketball-reference.com/players/h/hayesja02.html,60,7,4,0
+New Orleans Pelicans,NOP,70726,29593,221,Garrett Temple,4910000,templga01,https://www.basketball-reference.com/players/t/templga01.html,56,7,2,2
+New Orleans Pelicans,NOP,70726,29593,264,Kira Lewis Jr.,3822240,lewiski01,https://www.basketball-reference.com/players/l/lewiski01.html,54,6,1,2
+New Orleans Pelicans,NOP,70726,29593,284,Nickeil Alexander-Walker,3261480,alexani01,https://www.basketball-reference.com/players/a/alexani01.html,46,11,3,2
+Sacramento Kings,SAC,95823,19714,36,De'Aaron Fox,28103550,foxde01,https://www.basketball-reference.com/players/f/foxde01.html,58,25,3,7
+Sacramento Kings,SAC,95823,19714,48,Buddy Hield,22477273,hieldbu01,https://www.basketball-reference.com/players/h/hieldbu01.html,71,16,4,3
+Sacramento Kings,SAC,95823,19714,54,Harrison Barnes,20284091,barneha02,https://www.basketball-reference.com/players/b/barneha02.html,58,16,6,3
+Sacramento Kings,SAC,95823,19714,117,Marvin Bagley III,11312114,baglema01,https://www.basketball-reference.com/players/b/baglema01.html,43,14,7,1
+Sacramento Kings,SAC,95823,19714,123,Richaun Holmes,10384500,holmeri01,https://www.basketball-reference.com/players/h/holmeri01.html,61,14,8,1
+Sacramento Kings,SAC,95823,19714,136,Tristan Thompson,9720900,thomptr01,https://www.basketball-reference.com/players/t/thomptr01.html,54,7,8,1
+Sacramento Kings,SAC,95823,19714,240,Maurice Harkless,4347600,harklma01,https://www.basketball-reference.com/players/h/harklma01.html,37,5,2,1
+Sacramento Kings,SAC,95823,19714,250,Tyrese Haliburton,4023600,halibty01,https://www.basketball-reference.com/players/h/halibty01.html,58,13,3,5
+Sacramento Kings,SAC,95823,19714,253,Terence Davis,4000000,daviste02,https://www.basketball-reference.com/players/d/daviste02.html,61,8,2,1
+Sacramento Kings,SAC,95823,19714,270,Alex Len,3731707,lenal01,https://www.basketball-reference.com/players/l/lenal01.html,64,6,4,0
+Minnesota Timberwolves,MIN,55407,26092,21,Karl-Anthony Towns,31610000,townska01,https://www.basketball-reference.com/players/t/townska01.html,50,24,10,4
+Minnesota Timberwolves,MIN,55407,26092,32,D'Angelo Russell,30013500,russeda01,https://www.basketball-reference.com/players/r/russeda01.html,42,19,2,5
+Minnesota Timberwolves,MIN,55407,26092,70,Ricky Rubio,17809524,rubiori01,https://www.basketball-reference.com/players/r/rubiori01.html,68,8,3,6
+Minnesota Timberwolves,MIN,55407,26092,92,Malik Beasley,14391964,beaslma01,https://www.basketball-reference.com/players/b/beaslma01.html,37,19,4,2
+Minnesota Timberwolves,MIN,55407,26092,94,Patrick Beverley,14320988,beverpa01,https://www.basketball-reference.com/players/b/beverpa01.html,37,7,3,2
+Minnesota Timberwolves,MIN,55407,26092,125,Anthony Edwards,10245480,edwaran01,https://www.basketball-reference.com/players/e/edwaran01.html,72,19,4,2
+Minnesota Timberwolves,MIN,55407,26092,242,Jarred Vanderbilt,4259259,vandeja01,https://www.basketball-reference.com/players/v/vandeja01.html,64,5,5,1
+Minnesota Timberwolves,MIN,55407,26092,248,Josh Okogie,4087904,okogijo01,https://www.basketball-reference.com/players/o/okogijo01.html,59,5,2,1
+Minnesota Timberwolves,MIN,55407,26092,259,Jake Layman,3940184,laymaja01,https://www.basketball-reference.com/players/l/laymaja01.html,45,5,1,0
+Cleveland Cavaliers,CLE,44130,30981,27,Kevin Love,31300000,loveke01,https://www.basketball-reference.com/players/l/loveke01.html,25,12,7,2
+Cleveland Cavaliers,CLE,44130,30981,55,Jarrett Allen,20000000,allenja01,https://www.basketball-reference.com/players/a/allenja01.html,63,12,10,1
+Cleveland Cavaliers,CLE,44130,30981,82,Lauri Markkanen,15690909,markkla01,https://www.basketball-reference.com/players/m/markkla01.html,51,13,5,0
+Cleveland Cavaliers,CLE,44130,30981,89,Taurean Prince,15057692,princta02,https://www.basketball-reference.com/players/p/princta02.html,41,9,3,1
+Cleveland Cavaliers,CLE,44130,30981,165,Cedi Osman,8050000,osmande01,https://www.basketball-reference.com/players/o/osmande01.html,59,10,3,2
+Cleveland Cavaliers,CLE,44130,30981,175,Darius Garland,7040880,garlada01,https://www.basketball-reference.com/players/g/garlada01.html,54,17,2,6
+Cleveland Cavaliers,CLE,44130,30981,182,Isaac Okoro,6720720,okorois01,https://www.basketball-reference.com/players/o/okorois01.html,67,9,3,1
+Cleveland Cavaliers,CLE,44130,30981,188,Collin Sexton,6349671,sextoco01,https://www.basketball-reference.com/players/s/sextoco01.html,60,24,3,4
+Oklahoma City Thunder,OKC,73099,31777,43,Kemba Walker,8729020,walkeke02,https://www.basketball-reference.com/players/w/walkeke02.html,43,19,4,4
+Oklahoma City Thunder,OKC,73099,31777,137,Derrick Favors,9720900,favorde01,https://www.basketball-reference.com/players/f/favorde01.html,68,5,5,0
+Oklahoma City Thunder,OKC,73099,31777,201,Shai Gilgeous-Alexander,5495532,gilgesh01,https://www.basketball-reference.com/players/g/gilgesh01.html,35,23,4,5
+Oklahoma City Thunder,OKC,73099,31777,271,Gabriel Deck,3670000,deckga01,https://www.basketball-reference.com/players/d/deckga01.html,10,8,4,2
+Oklahoma City Thunder,OKC,73099,31777,277,Mike Muscala,3500000,muscami01,https://www.basketball-reference.com/players/m/muscami01.html,35,9,3,0
+Oklahoma City Thunder,OKC,73099,31777,288,Aleksej Pokusevski,3113160,pokusal01,https://www.basketball-reference.com/players/p/pokusal01.html,45,8,4,2
+Orlando Magic,ORL,32828,30846,52,Gary Harris,20482143,harriga01,https://www.basketball-reference.com/players/h/harriga01.html,39,9,2,2
+Orlando Magic,ORL,32828,30846,72,Jonathan Isaac,17400000,isaacjo01,https://www.basketball-reference.com/players/i/isaacjo01.html,0,0,0,0
+Orlando Magic,ORL,32828,30846,77,Markelle Fultz,16500000,fultzma01,https://www.basketball-reference.com/players/f/fultzma01.html,8,12,3,5
+Orlando Magic,ORL,32828,30846,109,Terrence Ross,12500000,rosste01,https://www.basketball-reference.com/players/r/rosste01.html,46,15,3,2
+Orlando Magic,ORL,32828,30846,168,Mo Bamba,7568742,bambamo01,https://www.basketball-reference.com/players/b/bambamo01.html,46,8,5,0
+Orlando Magic,ORL,32828,30846,181,Wendell Carter Jr.,6920027,cartewe01,https://www.basketball-reference.com/players/c/cartewe01.html,54,11,8,1
+Orlando Magic,ORL,32828,30846,198,Timofey Mozgov,5573334,mozgoti01,https://www.basketball-reference.com/players/m/mozgoti01.html,0,0,0,0
+Orlando Magic,ORL,32828,30846,216,Robin Lopez,5000000,lopezro01,https://www.basketball-reference.com/players/l/lopezro01.html,71,9,3,0
+Orlando Magic,ORL,32828,30846,278,Cole Anthony,3449400,anthoco01,https://www.basketball-reference.com/players/a/anthoco01.html,47,12,4,4
+Orlando Magic,ORL,32828,30846,282,Chuma Okeke,3277080,okekech01,https://www.basketball-reference.com/players/o/okekech01.html,45,7,4,2
+Orlando Magic,ORL,32828,30846,292,Michael Carter-Williams,3000000,cartemi01,https://www.basketball-reference.com/players/c/cartemi01.html,31,8,4,4
+Orlando Magic,ORL,32828,30846,306,E'Twaun Moore,2641691,mooreet01,https://www.basketball-reference.com/players/m/mooreet01.html,27,4,1,1
+Detroit Pistons,DET,48228,14928,34,Blake Griffin,32405817,griffbl01,https://www.basketball-reference.com/players/g/griffbl01.html,46,11,4,3
+Detroit Pistons,DET,48228,14928,56,Jerami Grant,20000000,grantje01,https://www.basketball-reference.com/players/g/grantje01.html,54,22,4,2
+Detroit Pistons,DET,48228,14928,112,Kelly Olynyk,12195122,olynyke01,https://www.basketball-reference.com/players/o/olynyke01.html,70,13,7,2
+Detroit Pistons,DET,48228,14928,166,DeAndre Jordan,2641691,jordade01,https://www.basketball-reference.com/players/j/jordade01.html,57,7,7,1
+Detroit Pistons,DET,48228,14928,199,Killian Hayes,5572680,hayeski01,https://www.basketball-reference.com/players/h/hayeski01.html,26,6,2,5
+Detroit Pistons,DET,48228,14928,208,Hamidou Diallo,5200000,diallha01,https://www.basketball-reference.com/players/d/diallha01.html,52,11,5,1
+Detroit Pistons,DET,48228,14928,214,Josh Jackson,5005350,jacksjo02,https://www.basketball-reference.com/players/j/jacksjo02.html,62,13,4,2
+Detroit Pistons,DET,48228,14928,222,Cory Joseph,4910000,josepco01,https://www.basketball-reference.com/players/j/josepco01.html,63,8,2,3
+Detroit Pistons,DET,48228,14928,283,Isaiah Stewart,3277080,stewais01,https://www.basketball-reference.com/players/s/stewais01.html,68,7,6,0
+Detroit Pistons,DET,48228,14928,293,Frank Jackson,3000000,jacksfr01,https://www.basketball-reference.com/players/j/jacksfr01.html,40,9,2,0
+Detroit Pistons,DET,48228,14928,297,Dewayne Dedmon,5256308,dedmode01,https://www.basketball-reference.com/players/d/dedmode01.html,16,7,5,0
+Detroit Pistons,DET,48228,14928,300,Saddiq Bey,2824320,beysa01,https://www.basketball-reference.com/players/b/beysa01.html,70,12,4,1
+Houston Rockets,HOU,77084,27533,2,John Wall,44310840,walljo01,https://www.basketball-reference.com/players/w/walljo01.html,40,20,3,6
+Houston Rockets,HOU,77084,27533,64,Eric Gordon,18218818,gordoer01,https://www.basketball-reference.com/players/g/gordoer01.html,27,17,2,2
+Houston Rockets,HOU,77084,27533,99,Christian Wood,13666667,woodch01,https://www.basketball-reference.com/players/w/woodch01.html,41,21,9,1
+Houston Rockets,HOU,77084,27533,157,Daniel Theis,8372093,theisda01,https://www.basketball-reference.com/players/t/theisda01.html,65,9,5,1
+Houston Rockets,HOU,77084,27533,178,D.J. Augustin,7000000,augusdj01,https://www.basketball-reference.com/players/a/augusdj01.html,57,7,1,3
+Houston Rockets,HOU,77084,27533,192,Avery Bradley,8558441,bradlav01,https://www.basketball-reference.com/players/b/bradlav01.html,27,6,2,1
+Houston Rockets,HOU,77084,27533,230,David Nwaba,4650000,nwabada01,https://www.basketball-reference.com/players/n/nwabada01.html,30,9,3,1
+Houston Rockets,HOU,77084,27533,262,Danuel House,3894000,houseda01,https://www.basketball-reference.com/players/h/houseda01.html,36,8,3,1
+Houston Rockets,HOU,77084,27533,274,Sekou Doumbouya,NA,doumbse01,https://www.basketball-reference.com/players/d/doumbse01.html,56,5,2,0
