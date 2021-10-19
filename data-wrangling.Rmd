@@ -131,6 +131,8 @@ team_info <- data_frame(season = character(),
                         winper = numeric(),
                         total_salary = numeric()
                         )
+#initialize all team names vector
+all_team_names = c()
 
 # manual urls per season
 rows = 1
@@ -151,6 +153,8 @@ for(i in 1:nrow(nba_data)){
     html_elements("#per_game-team > tbody > tr > td.left > a") %>%
     html_text()
   
+  all_team_names = c(all_team_names,team_name)
+  
   # get the links of each team
   team_link <- url %>%
     read_html() %>%
@@ -168,13 +172,13 @@ for(i in 1:nrow(nba_data)){
   for(x in 1:nrow(teams)){
     # get link
     url <- teams$link[x]
-    
+
     #get team name
     teamname <- teams$name[x]
-    
+
     page <- url %>%
-      read_html() 
-    
+      read_html()
+
     # get win % for each team
     # take the right element
     team_stats <- page %>%
@@ -186,9 +190,9 @@ for(i in 1:nrow(nba_data)){
       pluck(4) %>%
       pluck(1)
     #formatting
-    
+
     team_stats <- sub("      ", "", team_stats)
-    
+
     #calculate
     win = as.numeric(team_stats %>%
       str_split("-") %>%
@@ -198,21 +202,21 @@ for(i in 1:nrow(nba_data)){
       str_split("-") %>%
       pluck(1) %>%
       pluck(2))
-    
+
     team_winper = win/(win+lose)
-    
+
     #salary total
     salary <- page %>%
       html_elements("#all_salaries2")
-    
+
     salary <- as.character(salary)%>%
       substring(gregexpr("<!--",as.character(salary))) %>%
-      substring(5) %>% 
+      substring(5) %>%
       minimal_html()%>%
       html_nodes("table") %>%
       pluck(1) %>%
       html_table()
-    
+
     salary_clean <- salary %>%
       rename(name = "") %>%
       mutate(Salary = as.numeric(
@@ -221,9 +225,9 @@ for(i in 1:nrow(nba_data)){
         )
       ) %>%
       janitor::clean_names()
-    
+
     total_salary = sum(salary_clean$salary)
-    
+
     #add to big data frame
     df <- data_frame(
           season = nba_data$season[i],
@@ -234,7 +238,7 @@ for(i in 1:nrow(nba_data)){
           winper = team_winper,
           total_salary = total_salary
           )
-    
+
     team_info <- rbind(team_info,df)
   }
   
@@ -244,7 +248,13 @@ team_info_clean <- team_info %>%
   unique() %>%
   arrange(season,desc(winper))
 
+all_team_names <- all_team_names %>% 
+  unique()
+
+write.csv(all_team_names, "data/all_team_names.csv")
+
 write_csv(team_info_clean, "data/team_info.csv")
+team_info_clean
 # test code
 # 
 # team_info %>%
