@@ -131,6 +131,8 @@ team_info <- data_frame(season = character(),
                         winper = numeric(),
                         total_salary = numeric()
                         )
+#initialize all team names vector
+all_team_names = c()
 
 # manual urls per season
 rows = 1
@@ -151,6 +153,8 @@ for(i in 1:nrow(nba_data)){
     html_elements("#per_game-team > tbody > tr > td.left > a") %>%
     html_text()
   
+  all_team_names = c(all_team_names,team_name)
+  
   # get the links of each team
   team_link <- url %>%
     read_html() %>%
@@ -168,13 +172,13 @@ for(i in 1:nrow(nba_data)){
   for(x in 1:nrow(teams)){
     # get link
     url <- teams$link[x]
-    
+
     #get team name
     teamname <- teams$name[x]
-    
+
     page <- url %>%
-      read_html() 
-    
+      read_html()
+
     # get win % for each team
     # take the right element
     team_stats <- page %>%
@@ -186,9 +190,9 @@ for(i in 1:nrow(nba_data)){
       pluck(4) %>%
       pluck(1)
     #formatting
-    
+
     team_stats <- sub("      ", "", team_stats)
-    
+
     #calculate
     win = as.numeric(team_stats %>%
       str_split("-") %>%
@@ -198,21 +202,23 @@ for(i in 1:nrow(nba_data)){
       str_split("-") %>%
       pluck(1) %>%
       pluck(2))
-    
+
     team_winper = win/(win+lose)
-    
+
     #salary total
+    #get elements
     salary <- page %>%
       html_elements("#all_salaries2")
     
+    #manualy sift through the data since selector won't work for some reason
     salary <- as.character(salary)%>%
       substring(gregexpr("<!--",as.character(salary))) %>%
-      substring(5) %>% 
+      substring(5) %>%
       minimal_html()%>%
       html_nodes("table") %>%
       pluck(1) %>%
       html_table()
-    
+
     salary_clean <- salary %>%
       rename(name = "") %>%
       mutate(Salary = as.numeric(
@@ -221,9 +227,9 @@ for(i in 1:nrow(nba_data)){
         )
       ) %>%
       janitor::clean_names()
-    
+
     total_salary = sum(salary_clean$salary)
-    
+
     #add to big data frame
     df <- data_frame(
           season = nba_data$season[i],
@@ -234,7 +240,7 @@ for(i in 1:nrow(nba_data)){
           winper = team_winper,
           total_salary = total_salary
           )
-    
+
     team_info <- rbind(team_info,df)
   }
   
@@ -244,9 +250,16 @@ team_info_clean <- team_info %>%
   unique() %>%
   arrange(season,desc(winper))
 
+all_team_names <- all_team_names %>% 
+  unique()
+
+write.csv(all_team_names, "data/all_team_names.csv")
+
 write_csv(team_info_clean, "data/team_info.csv")
+
+
 # test code
-# 
+# team_info_clean
 # team_info %>%
 #   unique() %>%
 #   arrange(winper)
@@ -402,29 +415,4 @@ nba_salary_master <- nba_city_income %>%
   inner_join(nba_salary_clean, by = c("abbreviations" = "Tm"))
 write_csv(nba_salary_master, "data/nba_salary_master.csv")
 
-```
-
-```{r}
-# getting a table of the top paid players in the nba.
-paid_url <- "https://hoopshype.com/salaries/players/"
-paths_allowed(paid_url)
-paid_players <- paid_url %>%
-  read_html() %>%
-  html_nodes("table")%>%
-  purrr::pluck(1)%>%
-  html_table() %>%
-  janitor::clean_names()%>%
-  #removing first redunadnt column
-  select(!"x1") %>%
-  #remove first row which had titles
-  filter(!str_detect(x2,"Player")) %>%
-  #creating new names for columns
-  rename( Player = x2, Salary = x3) %>%
-  #only need the first two rows (player and salary)
-  select(c("Player", "Salary"))
-  #renaming the columns
-
-paid_players
-
-write_csv(paid_players, "data/paid_players.csv")
 ```
