@@ -1,6 +1,8 @@
 # Basketball Economics Shiny app
 # Ziji zhou and Rohil Bathija
 
+
+
 #load libraries
 library(shiny)
 library(tidyverse)
@@ -23,12 +25,13 @@ ui <- navbarPage(
         title = "Historic Team Salary and Performance",
         sidebarLayout(
             sidebarPanel(
+                #input for team names displayed
                 selectizeInput(inputId = "id_name",
                                label = "Identify teams to be shown:",
                                choices = team_names,
                                selected = NULL,
                                multiple = TRUE),
-                
+                #input for which years to show
                 sliderInput(inputId = "year_slider",
                             label = "Year range",
                             min = 1990,
@@ -46,16 +49,26 @@ ui <- navbarPage(
 # Define server logic required to draw a histogram
 server <- function(input, output) {
     #ZIJI
+    #filter through the data based on user parameters
     team_data <- reactive({
         data <- team_info %>%
             filter(team %in% input$id_name) %>%
             filter(start_year %in% input$year_slider[1]:input$year_slider[2])
     })
-    
+    #create ggplot
     output$team_historic_scatterplot <- renderPlot({
-        team_data() %>%
-            ggplot(aes(x = start_year, y = total_salary)) +
-            geom_point(aes(size = winper, color = team))
+            team_data() %>%
+                ggplot(aes(x = start_year, y = total_salary/100000)) +
+                geom_point(aes(size = winper, color = team)) +
+                geom_line(aes(color = team)) +
+                labs(
+                    x = "Season",
+                    y = "Total Salary $ in $100,000",
+                    color = "Team", 
+                    size = "Win Percentage"
+                )
+        
+            
     })
     
     #ROHIL
