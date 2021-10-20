@@ -20,27 +20,27 @@ ui <- navbarPage(
     title = "Basketball Economics",
     #ZIJI
     tabPanel(
-        
+        title = "Historic Team Salary and Performance",
         sidebarLayout(
-            titlePanel(title = "Historic Team Performance and Total Salary"),
             sidebarPanel(
                 selectizeInput(inputId = "id_name",
                                label = "Identify teams to be shown:",
                                choices = team_names,
                                selected = NULL,
-                               multiple = TRUE)
+                               multiple = TRUE),
                 
-                # sliderInput(inputId = "year_slider", 
-                #             label = h3("Year range"), 
-                #             min = 1990, 
-                #             max = 2020)
+                sliderInput(inputId = "year_slider",
+                            label = "Year range",
+                            min = 1990,
+                            max = 2020,
+                            value = c(1990,2020))
             ),
             
             mainPanel(plotOutput(outputId = "team_historic_scatterplot"))
         )
     )
     
-    #ROHIL (dont forget to add commas ^)
+    #ROHIL (dont forget to add commas)
 )
 
 # Define server logic required to draw a histogram
@@ -48,17 +48,18 @@ server <- function(input, output) {
     #ZIJI
     team_data <- reactive({
         data <- team_info %>%
-            filter(team %in% input$id_name)
+            filter(team %in% input$id_name) %>%
+            filter(start_year %in% input$year_slider[1]:input$year_slider[2])
     })
-
+    
     output$team_historic_scatterplot <- renderPlot({
         team_data() %>%
-            ggplot(aes(x = start_year, y = winper)) +
-                geom_point(aes(size = total_salary))
+            ggplot(aes(x = start_year, y = total_salary)) +
+            geom_point(aes(size = winper, color = team))
     })
     
     #ROHIL
 }
- 
+
 # Run the application 
 shinyApp(ui = ui, server = server)
