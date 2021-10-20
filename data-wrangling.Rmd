@@ -424,3 +424,18 @@ nba_salary_master <- nba_city_income %>%
 write_csv(nba_salary_master, "data/nba_salary_master.csv")
 
 ```
+
+```{r}
+
+tifo <- read.csv("data/team_info.csv")
+tifo
+data %>%
+    ggplot(aes(x = start_year, y = winper)) +
+    geom_point(aes(size = total_salary, color = team)) 
+  
+unique(tifo$team)[1:5]
+
+data <- tifo %>%
+  filter(team %in% unique(tifo$team)[1:5])
+```
+

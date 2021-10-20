@@ -55,6 +55,6 @@ server <- function(input, output) {
                 geom_point(aes(size = total_salary))
     })
 }
-
+ 
 # Run the application 
 shinyApp(ui = ui, server = server)
