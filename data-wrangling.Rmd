@@ -248,7 +248,13 @@ for(i in 1:nrow(nba_data)){
 
 team_info_clean <- team_info %>%
   unique() %>%
-  arrange(season,desc(winper))
+  arrange(season,desc(winper)) %>%
+  mutate(start_year = as.integer(
+    substring(season,
+              first = 1, 
+              last = 4)
+    )
+  )
 
 all_team_names <- all_team_names %>% 
   unique()
@@ -256,6 +262,8 @@ all_team_names <- all_team_names %>%
 write.csv(all_team_names, "data/all_team_names.csv")
 
 write_csv(team_info_clean, "data/team_info.csv")
+
+
 
 
 # test code
