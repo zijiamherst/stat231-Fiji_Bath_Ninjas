@@ -427,11 +427,15 @@ write_csv(nba_salary_master, "data/nba_salary_master.csv")
 
 
 ```{r}
-#code chunk to play with creating a graph 
+#code chunk to make final edits to dataset and have it be the one used in shiny
 nba_salaries <- read_csv("data/nba_salary_master.csv")
-
+#creating a final dataset with desired columns and values for shiny implementation
 nba_salaries <- nba_salaries %>%
-  mutate(salaryProportion = Salary/med_sal)
+  #adding in columns to have how many times the average salary a players salary is (by area)
+  mutate(salaryProportion = Salary/med_sal) %>%
+  #selecting only certain columns
+  select(c("team", "abbreviations", "Player", "games", "points", "rebounds", "assists", "salaryProportion"))
+write_csv(nba_salaries, "data/nba_salaries.csv")
 ```
 
 
