@@ -240,12 +240,13 @@ for(i in 1:nrow(nba_data)){
           winper = team_winper,
           total_salary = total_salary
           )
-
+  
     team_info <- rbind(team_info,df)
   }
   
 }
 
+#clean out data and added start year column
 team_info_clean <- team_info %>%
   unique() %>%
   arrange(season,desc(winper)) %>%
@@ -256,54 +257,9 @@ team_info_clean <- team_info %>%
     )
   )
 
-all_team_names <- all_team_names %>% 
-  unique()
-
-write.csv(all_team_names, "data/all_team_names.csv")
-
 write_csv(team_info_clean, "data/team_info.csv")
 
 
-
-
-# test code
-# team_info_clean
-# team_info %>%
-#   unique() %>%
-#   arrange(winper)
-# 
-# df
-# 
-# team_info_clean
-# nba_data
-# 
-# team_link <- "https://www.basketball-reference.com/teams/SEA/1991.html#all_salaries2"
-# 
-# salary <- team_link %>%
-#   read_html() %>%
-#   html_elements("#all_salaries2")
-# 
-# salary <- as.character(salary)%>%
-#   substring(gregexpr("<!--",as.character(salary))) %>%
-#   substring(5) %>%
-#   minimal_html()%>%
-#   html_nodes("table") %>%
-#   pluck(1) %>%
-#   html_table()
-# 
-# salary_clean <- salary %>%
-#   rename(name = "") %>%
-#   mutate(Salary = as.numeric(
-#     str_remove_all(
-#       substring(Salary,2), ",")
-#     )
-#   )%>%
-#   janitor::clean_names()
-# 
-# 
-# sum(salary_clean$salary)
-# 
-# test code
 ```
 
 ```{r}
@@ -330,8 +286,6 @@ nba_zip_codes <- nba_zip_codes %>%
 
 nba_city_income <- nba_zip_codes %>%
   inner_join(zipcode_income, by = c("zip" = "zip"))
-
-write.csv(nba_city_income, "data/nba_city_income.csv")
 ```
 
 ```{r}
@@ -339,7 +293,6 @@ write.csv(nba_city_income, "data/nba_city_income.csv")
 
 # from basketball reference
 nba_salary <- read_excel("data/nba_salary.xlsm")
-write.csv(nba_salary, "data/nba_salary.csv")
 
 #to create the codes
 nba_salary$codes <- sapply(strsplit(as.character(nba_salary$Player), "\\\\"),"[", 3)
@@ -421,14 +374,13 @@ for(i in 1:nrow(nba_salary_clean)){
 }
 nba_salary_master <- nba_city_income %>%
   inner_join(nba_salary_clean, by = c("abbreviations" = "Tm"))
-write_csv(nba_salary_master, "data/nba_salary_master.csv")
 
 ```
 
 
 ```{r}
 #code chunk to make final edits to dataset and have it be the one used in shiny
-nba_salaries <- read_csv("data/nba_salary_master.csv")
+nba_salaries <- nba_salary_master
 #creating a final dataset with desired columns and values for shiny implementation
 nba_salaries <- nba_salaries %>%
   #adding in columns to have how many times the average salary a players salary is (by area)
@@ -436,20 +388,5 @@ nba_salaries <- nba_salaries %>%
   #selecting only certain columns
   select(c("team", "abbreviations", "Player", "games", "points", "rebounds", "assists", "salaryProportion"))
 write_csv(nba_salaries, "data/nba_salaries.csv")
-```
-
-
-```{r}
-
-tifo <- read.csv("data/team_info.csv")
-tifo
-data %>%
-    ggplot(aes(x = start_year, y = winper)) +
-    geom_point(aes(size = total_salary, color = team)) 
-  
-unique(tifo$team)[1:5]
-
-data <- tifo %>%
-  filter(team %in% unique(tifo$team)[1:5])
 ```
 
