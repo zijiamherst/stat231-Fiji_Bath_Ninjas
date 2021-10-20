@@ -1,0 +1,283 @@
+team,abbreviations,Player,games,points,rebounds,assists,salaryProportion
+Philadelphia 76ers,PHI,Tobias Harris,62,19,6,3,2397.6023976023976
+Philadelphia 76ers,PHI,Ben Simmons,58,14,7,6,2103.896103896104
+Philadelphia 76ers,PHI,Joel Embiid,51,28,10,2,2103.189477189477
+Philadelphia 76ers,PHI,Danny Green,69,9,3,1,666.000666000666
+Philadelphia 76ers,PHI,Seth Curry,57,12,2,2,545.1912753912754
+Philadelphia 76ers,PHI,Furkan Korkmaz,55,9,2,1,308.3336663336663
+Philadelphia 76ers,PHI,Georges Niang,72,6,2,0,219.78021978021977
+Philadelphia 76ers,PHI,Matisse Thybulle,65,3,1,1,189.15484515484516
+Brooklyn Nets,BRK,James Harden,44,24,7,10,1525.9439707673569
+Brooklyn Nets,BRK,Kevin Durant,35,26,7,5,1424.0090481990603
+Brooklyn Nets,BRK,Kyrie Irving,54,26,4,6,1215.1104924308336
+Brooklyn Nets,BRK,Joe Harris,69,14,3,1,604.0418653210371
+Brooklyn Nets,BRK,Patty Mills,68,10,1,2,204.97650948320864
+Brooklyn Nets,BRK,Bruce Brown,65,8,5,1,164.81997563946408
+Brooklyn Nets,BRK,Landry Shamet,61,9,1,1,131.14118670610753
+Milwaukee Bucks,MIL,Giannis Antetokounmpo,61,28,11,5,2328.518080132568
+Milwaukee Bucks,MIL,Khris Middleton,68,20,6,5,2100.964668284311
+Milwaukee Bucks,MIL,Jrue Holiday,59,17,4,6,1783.3540273421318
+Milwaukee Bucks,MIL,Brook Lopez,70,12,5,0,787.2595727052139
+Milwaukee Bucks,MIL,Pat Connaughton,69,6,4,1,315.6378647097118
+Milwaukee Bucks,MIL,Donte DiVincenzo,66,10,5,3,276.72545422264307
+Milwaukee Bucks,MIL,Bobby Portis,66,11,7,1,482.4377108362431
+Milwaukee Bucks,MIL,Grayson Allen,50,10,3,2,239.9653784695508
+Milwaukee Bucks,MIL,George Hill,30,8,2,2,236.72841332780968
+Milwaukee Bucks,MIL,Bobby Portis,66,11,7,1,482.4377108362431
+Milwaukee Bucks,MIL,Jon Leuer,0,0,0,0,187.5686216488134
+New York Knicks,NYK,Julius Randle,71,24,10,6,222.98552846444056
+New York Knicks,NYK,Evan Fournier,42,17,3,3,204.28554535728364
+New York Knicks,NYK,Derrick Rose,50,14,2,4,151.41753477110197
+New York Knicks,NYK,Alec Burks,49,12,4,2,107.39343431499522
+New York Knicks,NYK,Nerlens Noel,64,5,6,0,99.10467931752915
+New York Knicks,NYK,Kemba Walker,43,19,4,4,98.30530998367026
+New York Knicks,NYK,RJ Barrett,72,17,5,3,97.1216847795484
+New York Knicks,NYK,Joakim Noah,0,0,0,0,72.43274959175629
+New York Knicks,NYK,Kevin Knox,42,3,1,0,65.83679261219663
+New York Knicks,NYK,Obi Toppin,62,4,2,0,57.49377780280421
+New York Knicks,NYK,Taj Gibson,45,5,5,0,55.29590630103046
+Atlanta Hawks,ATL,John Collins,63,17,7,1,731.7849188673242
+Atlanta Hawks,ATL,Danilo Gallinari,51,13,4,1,651.4476614699332
+Atlanta Hawks,ATL,Bogdan Bogdanovi,44,16,3,3,572.7012408526886
+Atlanta Hawks,ATL,Clint Capela,63,15,14,0,544.175882914413
+Atlanta Hawks,ATL,Delon Wright,63,10,4,4,271.2795418390073
+Atlanta Hawks,ATL,Trae Young,63,25,3,9,264.9211263124403
+Atlanta Hawks,ATL,De'Andre Hunter,23,15,4,1,247.3878460069997
+Atlanta Hawks,ATL,Onyeka Okongwu,50,4,3,0,194.21826280623608
+Atlanta Hawks,ATL,Lou Williams,66,11,2,3,159.0836780146357
+Atlanta Hawks,ATL,Cam Reddish,26,11,4,1,148.58924594336622
+Atlanta Hawks,ATL,Kevin Huerter,69,11,3,3,135.32793509385937
+Atlanta Hawks,ATL,Gorgui Dieng,38,6,3,1,127.26694241170856
+Miami Heat,MIA,Jimmy Butler,52,21,6,7,1439.7841295222865
+Miami Heat,MIA,Bam Adebayo,64,18,9,5,1123.467919248451
+Miami Heat,MIA,Kyle Lowry,46,17,5,7,1078.7178892664401
+Miami Heat,MIA,Duncan Robinson,72,13,3,1,622.0267839296422
+Miami Heat,MIA,Andre Iguodala,63,4,3,2,705.2444933040176
+Miami Heat,MIA,P.J. Tucker,52,3,3,1,279.83210073955627
+Miami Heat,MIA,Ryan Anderson,0,0,0,0,208.4582850289826
+Miami Heat,MIA,Tyler Herro,54,15,5,3,160.07515490705578
+Miami Heat,MIA,Udonis Haslem,1,4,1,0,105.60427743353988
+Miami Heat,MIA,Markieff Morris,61,6,4,1,105.60427743353988
+Boston Celtics,BOS,Jayson Tatum,64,26,7,4,1057.7571606007
+Boston Celtics,BOS,Al Horford,28,14,6,3,1016.2219127554669
+Boston Celtics,BOS,Jaylen Brown,58,24,6,3,934.5612179607814
+Boston Celtics,BOS,Marcus Smart,48,13,3,5,539.699838157251
+Boston Celtics,BOS,Josh Richardson,59,12,3,2,436.599043998645
+Boston Celtics,BOS,Romeo Langford,18,3,1,0,143.1879257781625
+Boston Celtics,BOS,Robert Williams,52,8,6,1,137.82889834017087
+Boston Celtics,BOS,Aaron Nesmith,46,4,2,0,136.67055591102414
+Utah Jazz,UTA,Rudy Gobert,71,14,13,1,1638.9904011129145
+Utah Jazz,UTA,Donovan Mitchell,53,26,4,5,1303.2019476002781
+Utah Jazz,UTA,Mike Conley,51,16,3,6,973.8001391143056
+Utah Jazz,UTA,Bojan Bogdanovi,72,17,3,1,867.1458381636911
+Utah Jazz,UTA,Joe Ingles,67,12,3,4,649.2000927428704
+Utah Jazz,UTA,Jordan Clarkson,68,18,4,2,575.9332251333179
+Utah Jazz,UTA,Royce O'Neale,71,7,6,2,402.4377927196847
+Utah Jazz,UTA,Rudy Gay,63,11,4,1,273.12775330396477
+Denver Nuggets,DEN,Jamal Murray,48,21,4,4,1520.797227036395
+Denver Nuggets,DEN,Nikola Joki,72,26,10,8,1468.8245233968805
+Denver Nuggets,DEN,Aaron Gordon,50,12,5,3,789.962016175621
+Denver Nuggets,DEN,Will Barton,56,12,4,3,1456.9909012131716
+Denver Nuggets,DEN,Will Barton,56,12,4,3,1456.9909012131716
+Denver Nuggets,DEN,Monte Morris,47,10,2,3,401.1810610437127
+Denver Nuggets,DEN,JaMychal Green,58,8,4,0,763.1634411708069
+Denver Nuggets,DEN,JaMychal Green,58,8,4,0,763.1634411708069
+Denver Nuggets,DEN,Michael Porter Jr.,61,19,7,1,253.16459657230888
+Denver Nuggets,DEN,Jeff Green,68,11,3,1,216.63778162911612
+Denver Nuggets,DEN,Facundo Campazzo,65,6,2,3,183.13835932986714
+Los Angeles Clippers,LAC,Paul George,54,23,6,5,3042.6857938287835
+Los Angeles Clippers,LAC,Kawhi Leonard,52,24,6,5,3042.6803804810147
+Los Angeles Clippers,LAC,Eric Bledsoe,71,12,3,3,1401.670404454412
+Los Angeles Clippers,LAC,Marcus Morris,57,13,4,1,1208.5613641636378
+Los Angeles Clippers,LAC,Luke Kennard,63,8,2,1,984.2450699868533
+Los Angeles Clippers,LAC,Reggie Jackson,67,10,2,3,803.0701415203774
+Los Angeles Clippers,LAC,Serge Ibaka,41,11,6,1,753.3833423555797
+Los Angeles Clippers,LAC,Ivica Zubac,72,9,7,1,581.433609156291
+Los Angeles Clippers,LAC,Justise Winslow,26,6,4,1,1307.12543500116
+Los Angeles Clippers,LAC,Nicolas Batum,67,8,4,2,944.5137267032712
+Los Angeles Clippers,LAC,Paul George,54,23,6,5,3042.6857938287835
+Los Angeles Clippers,LAC,Kawhi Leonard,52,24,6,5,3042.6803804810147
+Los Angeles Clippers,LAC,Eric Bledsoe,71,12,3,3,1401.670404454412
+Los Angeles Clippers,LAC,Marcus Morris,57,13,4,1,1208.5613641636378
+Los Angeles Clippers,LAC,Luke Kennard,63,8,2,1,984.2450699868533
+Los Angeles Clippers,LAC,Reggie Jackson,67,10,2,3,803.0701415203774
+Los Angeles Clippers,LAC,Serge Ibaka,41,11,6,1,753.3833423555797
+Los Angeles Clippers,LAC,Ivica Zubac,72,9,7,1,581.433609156291
+Los Angeles Clippers,LAC,Justise Winslow,26,6,4,1,1307.12543500116
+Los Angeles Clippers,LAC,Nicolas Batum,67,8,4,2,944.5137267032712
+Dallas Mavericks,DAL,Kristaps Porzi,43,20,8,1,872.5423168109389
+Dallas Mavericks,DAL,Tim Hardaway Jr.,70,16,3,1,587.3853448751172
+Dallas Mavericks,DAL,Dwight Powell,58,5,4,1,303.2475051000717
+Dallas Mavericks,DAL,Luka Don,66,27,8,8,280.48715333296576
+Dallas Mavericks,DAL,Reggie Bullock,65,10,3,1,262.88801896675307
+Dallas Mavericks,DAL,Maxi Kleber,50,7,5,1,241.21960632960247
+Dallas Mavericks,DAL,Willie Cauley-Stein,53,5,4,0,115.78541103820919
+Dallas Mavericks,DAL,Dorian Finney-Smith,60,9,5,1,110.2718200363897
+Dallas Mavericks,DAL,Trey Burke,62,6,0,1,91.89317417433975
+Dallas Mavericks,DAL,Sterling Brown,51,8,4,1,82.70386502729228
+Dallas Mavericks,DAL,Josh Green,39,2,2,0,81.53277829850582
+Los Angeles Lakers,LAL,Russell Westbrook,65,22,11,11,3419.0044080117545
+Los Angeles Lakers,LAL,LeBron James,45,25,7,7,3184.6372283659425
+Los Angeles Lakers,LAL,Anthony Davis,36,21,7,3,2734.6191323176863
+Los Angeles Lakers,LAL,Talen Horton-Tucker,65,9,2,2,734.6686257830021
+Los Angeles Lakers,LAL,Kendrick Nunn,56,14,3,2,386.6676977805274
+Los Angeles Lakers,LAL,Luol Deng,0,0,0,0,385.89436238496637
+Los Angeles Lakers,LAL,Russell Westbrook,65,22,11,11,3419.0044080117545
+Los Angeles Lakers,LAL,LeBron James,45,25,7,7,3184.6372283659425
+Los Angeles Lakers,LAL,Anthony Davis,36,21,7,3,2734.6191323176863
+Los Angeles Lakers,LAL,Talen Horton-Tucker,65,9,2,2,734.6686257830021
+Los Angeles Lakers,LAL,Kendrick Nunn,56,14,3,2,386.6676977805274
+Los Angeles Lakers,LAL,Luol Deng,0,0,0,0,385.89436238496637
+Portland Trail Blazers,POR,Damian Lillard,67,28,4,7,754.7918499732588
+Portland Trail Blazers,POR,CJ McCollum,47,23,3,4,532.4810310025362
+Portland Trail Blazers,POR,Norman Powell,69,18,3,1,267.7094353294343
+Portland Trail Blazers,POR,Robert Covington,70,8,6,1,223.85782309404274
+Portland Trail Blazers,POR,Jusuf Nurki,37,11,9,3,207.028621706951
+Portland Trail Blazers,POR,Larry Nance Jr.,35,9,6,3,184.44367958870313
+Portland Trail Blazers,POR,Anfernee Simons,64,7,2,1,67.95400514121077
+Portland Trail Blazers,POR,Andrew Nicholson,0,0,0,0,49.07318461777341
+Portland Trail Blazers,POR,Patrick Patterson,38,5,2,0,58.29161706605938
+Golden State Warriors,GSW,Stephen Curry,63,32,5,5,1156.0558066715487
+Golden State Warriors,GSW,Klay Thompson,0,0,0,0,959.0848715941517
+Golden State Warriors,GSW,Andrew Wiggins,71,18,4,2,797.4392060806546
+Golden State Warriors,GSW,Draymond Green,63,7,7,8,606.7198303073154
+Golden State Warriors,GSW,James Wiseman,39,11,5,0,231.4790030554784
+Golden State Warriors,GSW,Kevon Looney,61,4,5,2,130.76871796166765
+Memphis Grizzlies,MEM,Steven Adams,58,7,8,1,1158.1312576312575
+Memphis Grizzlies,MEM,Justise Winslow,26,6,4,1,1146.5499253832588
+Memphis Grizzlies,MEM,Dillon Brooks,67,17,2,2,827.5674942341609
+Memphis Grizzlies,MEM,Kyle Anderson,69,12,5,3,674.0706824040158
+Memphis Grizzlies,MEM,Ja Morant,63,19,4,7,651.4285714285714
+Memphis Grizzlies,MEM,Jaren Jackson Jr.,11,14,5,1,622.7486094152761
+Memphis Grizzlies,MEM,De'Anthony Melton,52,9,3,2,572.3443223443223
+Memphis Grizzlies,MEM,Tyus Jones,70,6,2,3,510.2564102564103
+Memphis Grizzlies,MEM,Jarrett Culver,34,5,3,0,433.8054538054538
+Memphis Grizzlies,MEM,Kris Dunn,4,1,1,0,339.52991452991455
+Memphis Grizzlies,MEM,Rajon Rondo,45,5,2,4,179.19488536155202
+Memphis Grizzlies,MEM,Brandon Clarke,59,10,5,1,184.97354497354496
+Washington Wizards,WAS,Bradley Beal,60,31,4,4,894.3241141553696
+Washington Wizards,WAS,Spencer Dinwiddie,3,6,4,3,444.3572150651909
+Washington Wizards,WAS,Davis Bertans,57,11,2,0,414.73340418362324
+Washington Wizards,WAS,Kentavious Caldwell-Pope,67,9,2,1,337.97822649628034
+Washington Wizards,WAS,Kyle Kuzma,68,12,6,1,336.9708908991939
+Washington Wizards,WAS,Montrezl Harrell,69,13,6,1,251.97387179553644
+Washington Wizards,WAS,Thomas Bryant,10,14,6,1,226.2930350708935
+Washington Wizards,WAS,Rui Hachimura,57,13,5,1,127.43098576946007
+Washington Wizards,WAS,Deni Avdija,54,6,4,1,121.64234428056714
+Washington Wizards,WAS,Aaron Holiday,66,7,1,1,103.17921667228285
+Indiana Pacers,IND,Malcolm Brogdon,56,21,5,5,595.3034127071217
+Indiana Pacers,IND,Domantas Sabonis,62,20,12,6,509.23131789750903
+Indiana Pacers,IND,Myles Turner,47,12,6,1,493.80006584000876
+Indiana Pacers,IND,Caris LeVert,47,20,4,5,480.083397344453
+Indiana Pacers,IND,T.J. Warren,4,15,3,1,348.1290464172062
+Indiana Pacers,IND,Jeremy Lamb,36,10,3,1,288.0500384066718
+Indiana Pacers,IND,T.J. McConnell,69,8,3,6,205.75002743333698
+Indiana Pacers,IND,Justin Holiday,72,10,3,1,164.77614397015253
+Indiana Pacers,IND,Torrey Craig,50,5,3,1,133.82116207615493
+Indiana Pacers,IND,Goga Bitadze,45,5,3,0,84.99945133326018
+Charlotte Hornets,CHO,Gordon Hayward,44,19,5,4,892.1378487244517
+Charlotte Hornets,CHO,Terry Rozier,69,20,4,4,534.2462479486798
+Charlotte Hornets,CHO,Kelly Oubre Jr.,55,15,6,1,358.0486349395793
+Charlotte Hornets,CHO,Nicolas Batum,67,8,4,2,364.41912576458304
+Charlotte Hornets,CHO,LaMelo Ball,51,15,5,6,245.6142025958526
+Charlotte Hornets,CHO,Mason Plumlee,56,10,9,3,242.8017305684022
+Charlotte Hornets,CHO,Miles Bridges,66,12,6,2,161.7631806653737
+Charlotte Hornets,CHO,Ish Smith,44,6,3,3,134.26823810234222
+Charlotte Hornets,CHO,P.J. Washington,64,12,6,2,125.76816350887663
+San Antonio Spurs,SAS,Dejounte Murray,67,15,7,5,595.8357534563992
+San Antonio Spurs,SAS,Derrick White,36,15,3,3,586.1810071831312
+San Antonio Spurs,SAS,Thaddeus Young,68,12,6,4,548.0033984706882
+San Antonio Spurs,SAS,Doug McDermott,66,13,3,1,531.0110450297366
+San Antonio Spurs,SAS,Al-Farouq Aminu,23,4,4,1,393.2880203908241
+San Antonio Spurs,SAS,Jakob Poeltl,69,8,7,1,337.9161195643778
+San Antonio Spurs,SAS,Zach Collins,0,0,0,0,269.71989650111993
+San Antonio Spurs,SAS,Bryn Forbes,70,10,1,0,173.7854329188229
+San Antonio Spurs,SAS,Lonnie Walker,60,11,2,1,171.77322931953347
+San Antonio Spurs,SAS,Devin Vassell,62,5,2,0,163.55758090677378
+San Antonio Spurs,SAS,Chandler Hutchison,25,4,3,0,NA
+Chicago Bulls,CHI,DeMar DeRozan,61,21,4,6,1887.661909758657
+Chicago Bulls,CHI,Nikola Vu,70,23,11,3,1678.9087093389296
+Chicago Bulls,CHI,Lonzo Ball,55,14,4,5,1382.8221056313396
+Chicago Bulls,CHI,Zach LaVine,58,27,5,4,1364.1133263378804
+Chicago Bulls,CHI,Derrick Jones Jr.,58,6,3,0,680.7769849597762
+Chicago Bulls,CHI,Alex Caruso,58,6,2,2,601.9343126967472
+Chicago Bulls,CHI,Patrick Williams,71,9,4,1,519.202518363064
+Chicago Bulls,CHI,Coby White,69,15,4,4,408.37775445960125
+Chicago Bulls,CHI,Troy Brown Jr.,34,4,3,0,361.7043721580972
+Chicago Bulls,CHI,Ryan Arcidiacono,44,3,1,1,335.0301504022385
+New Orleans Pelicans,NOP,Brandon Ingram,61,23,4,4,995.7692697597405
+New Orleans Pelicans,NOP,Jonas Valan,62,17,12,1,473.0848511472308
+New Orleans Pelicans,NOP,Josh Hart,47,9,8,2,405.5013009833406
+New Orleans Pelicans,NOP,Devonte' Graham,55,14,2,5,371.7095259013956
+New Orleans Pelicans,NOP,Zion Williamson,61,27,7,3,362.70063866454905
+New Orleans Pelicans,NOP,TomSatoransk,58,7,2,4,337.91775081945053
+New Orleans Pelicans,NOP,Jaxson Hayes,60,7,4,0,180.72787483526508
+New Orleans Pelicans,NOP,Garrett Temple,56,7,2,2,165.9176156523502
+New Orleans Pelicans,NOP,Kira Lewis Jr.,54,6,1,2,129.16027438921367
+New Orleans Pelicans,NOP,Nickeil Alexander-Walker,46,11,3,2,110.21119859426216
+Sacramento Kings,SAC,De'Aaron Fox,58,25,3,7,1425.5630516384294
+Sacramento Kings,SAC,Buddy Hield,71,16,4,3,1140.1680531601908
+Sacramento Kings,SAC,Harrison Barnes,58,16,6,3,1028.918078522877
+Sacramento Kings,SAC,Marvin Bagley III,43,14,7,1,573.8112001623211
+Sacramento Kings,SAC,Richaun Holmes,61,14,8,1,526.7576341686112
+Sacramento Kings,SAC,Tristan Thompson,54,7,8,1,493.09627675763414
+Sacramento Kings,SAC,Maurice Harkless,37,5,2,1,220.53363092218729
+Sacramento Kings,SAC,Tyrese Haliburton,58,13,3,5,204.09861012478441
+Sacramento Kings,SAC,Terence Davis,61,8,2,1,202.90149132596125
+Sacramento Kings,SAC,Alex Len,64,6,4,0,189.29222887288222
+Minnesota Timberwolves,MIN,Karl-Anthony Towns,50,24,10,4,1211.4824467269661
+Minnesota Timberwolves,MIN,D'Angelo Russell,42,19,2,5,1150.2951096121417
+Minnesota Timberwolves,MIN,Ricky Rubio,68,8,3,6,682.5664571516173
+Minnesota Timberwolves,MIN,Malik Beasley,37,19,4,2,551.5853135060555
+Minnesota Timberwolves,MIN,Patrick Beverley,37,7,3,2,548.8650927487353
+Minnesota Timberwolves,MIN,Anthony Edwards,72,19,4,2,392.6674842863713
+Minnesota Timberwolves,MIN,Jarred Vanderbilt,64,5,5,1,163.24003525984978
+Minnesota Timberwolves,MIN,Josh Okogie,59,5,2,1,156.67269661198836
+Minnesota Timberwolves,MIN,Jake Layman,45,5,1,0,151.0111911697072
+Cleveland Cavaliers,CLE,Kevin Love,25,12,7,2,1010.2966334204835
+Cleveland Cavaliers,CLE,Jarrett Allen,63,12,10,1,645.5569542622898
+Cleveland Cavaliers,CLE,Lauri Markkanen,51,13,5,0,506.46877118233755
+Cleveland Cavaliers,CLE,Taurean Prince,41,9,3,1,486.0298892869823
+Cleveland Cavaliers,CLE,Cedi Osman,59,10,3,2,259.83667409057165
+Cleveland Cavaliers,CLE,Darius Garland,54,17,2,6,227.26445240631355
+Cleveland Cavaliers,CLE,Isaac Okoro,67,9,3,1,216.9303766824828
+Cleveland Cavaliers,CLE,Collin Sexton,60,24,3,4,204.9537135663794
+Oklahoma City Thunder,OKC,Kemba Walker,43,19,4,4,274.69616389212325
+Oklahoma City Thunder,OKC,Derrick Favors,68,5,5,0,305.9099348585455
+Oklahoma City Thunder,OKC,Shai Gilgeous-Alexander,35,23,4,5,172.9405544890959
+Oklahoma City Thunder,OKC,Gabriel Deck,10,8,4,2,115.49233722503698
+Oklahoma City Thunder,OKC,Mike Muscala,35,9,3,0,110.14255593668376
+Oklahoma City Thunder,OKC,Aleksej Pokusevski,45,8,4,2,97.96897126852755
+Orlando Magic,ORL,Gary Harris,39,9,2,2,664.0129352266096
+Orlando Magic,ORL,Jonathan Isaac,0,0,0,0,564.0925889904688
+Orlando Magic,ORL,Markelle Fultz,8,12,3,5,534.9153861116514
+Orlando Magic,ORL,Terrence Ross,46,15,3,2,405.2389288724632
+Orlando Magic,ORL,Mo Bamba,46,8,5,0,245.371912079362
+Orlando Magic,ORL,Wendell Carter Jr.,54,11,8,1,224.341146339882
+Orlando Magic,ORL,Timofey Mozgov,0,0,0,0,180.68255203267847
+Orlando Magic,ORL,Robin Lopez,71,9,3,0,162.09557154898528
+Orlando Magic,ORL,Cole Anthony,47,12,4,4,111.82649290021396
+Orlando Magic,ORL,Chuma Okeke,45,7,4,2,106.24003112234973
+Orlando Magic,ORL,Michael Carter-Williams,31,8,4,4,97.25734292939117
+Orlando Magic,ORL,E'Twaun Moore,27,4,1,1,85.64128250016209
+Detroit Pistons,DET,Blake Griffin,46,11,4,3,2170.8076768488745
+Detroit Pistons,DET,Jerami Grant,54,22,4,2,1339.7642015005358
+Detroit Pistons,DET,Kelly Olynyk,70,13,7,2,816.9293944265809
+Detroit Pistons,DET,DeAndre Jordan,57,7,7,1,176.96215166130762
+Detroit Pistons,DET,Killian Hayes,26,6,2,5,373.30385852090035
+Detroit Pistons,DET,Hamidou Diallo,52,11,5,1,348.33869239013933
+Detroit Pistons,DET,Josh Jackson,62,13,4,2,335.2994372990354
+Detroit Pistons,DET,Cory Joseph,63,8,2,3,328.91211146838157
+Detroit Pistons,DET,Isaiah Stewart,68,7,6,0,219.5257234726688
+Detroit Pistons,DET,Frank Jackson,40,9,2,0,200.96463022508038
+Detroit Pistons,DET,Dewayne Dedmon,16,7,5,0,352.11066452304397
+Detroit Pistons,DET,Saddiq Bey,70,12,4,1,189.19614147909968
+Houston Rockets,HOU,John Wall,40,20,3,6,1609.372026295718
+Houston Rockets,HOU,Eric Gordon,27,17,2,2,661.7084226201285
+Houston Rockets,HOU,Christian Wood,41,21,9,1,496.3740602186467
+Houston Rockets,HOU,Daniel Theis,65,9,5,1,304.0748556277921
+Houston Rockets,HOU,D.J. Augustin,57,7,1,3,254.2403661061272
+Houston Rockets,HOU,Avery Bradley,27,6,2,1,310.84302473395564
+Houston Rockets,HOU,David Nwaba,30,9,3,1,168.88824319907022
+Houston Rockets,HOU,Danuel House,36,8,3,1,141.43028365960848
+Houston Rockets,HOU,Sekou Doumbouya,56,5,2,0,NA
