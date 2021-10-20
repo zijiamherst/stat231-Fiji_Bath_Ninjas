@@ -425,6 +425,16 @@ write_csv(nba_salary_master, "data/nba_salary_master.csv")
 
 ```
 
+
+```{r}
+#code chunk to play with creating a graph 
+nba_salaries <- read_csv("data/nba_salary_master.csv")
+
+nba_salaries <- nba_salaries %>%
+  mutate(salaryProportion = Salary/med_sal)
+```
+
+
 ```{r}
 
 tifo <- read.csv("data/team_info.csv")
