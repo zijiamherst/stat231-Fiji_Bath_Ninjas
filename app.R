@@ -10,6 +10,7 @@ library(dplyr)
 
 #load datasets
 #visualization 1
+#ZIJI
 team_info <- read.csv("data/team_info.csv")
 team_names <- unique(team_info$team)
 
@@ -17,7 +18,7 @@ team_names <- unique(team_info$team)
 # Define UI 
 ui <- navbarPage(
     title = "Basketball Economics",
-    #first visualization
+    #ZIJI
     tabPanel(
         
         sidebarLayout(
@@ -27,33 +28,36 @@ ui <- navbarPage(
                                label = "Identify teams to be shown:",
                                choices = team_names,
                                selected = NULL,
-                               multiple = TRUE),
+                               multiple = TRUE)
                 
-                sliderInput(inputId = "year_slider", 
-                            label = h3("Year range"), 
-                            min = 1990, 
-                            max = 2020, 
-                            value = c(1990, 2020))
+                # sliderInput(inputId = "year_slider", 
+                #             label = h3("Year range"), 
+                #             min = 1990, 
+                #             max = 2020)
             ),
             
             mainPanel(plotOutput(outputId = "team_historic_scatterplot"))
         )
     )
+    
+    #ROHIL (dont forget to add commas ^)
 )
 
 # Define server logic required to draw a histogram
 server <- function(input, output) {
+    #ZIJI
     team_data <- reactive({
         data <- team_info %>%
-            filter(team %in% input$id_name) %>%
-            filter(start_year %in% input$year_slider)
+            filter(team %in% input$id_name)
     })
 
-    output$distPlot <- renderPlot({
+    output$team_historic_scatterplot <- renderPlot({
         team_data() %>%
             ggplot(aes(x = start_year, y = winper)) +
                 geom_point(aes(size = total_salary))
     })
+    
+    #ROHIL
 }
  
 # Run the application 
