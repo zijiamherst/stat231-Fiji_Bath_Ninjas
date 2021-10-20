@@ -1,14 +1,11 @@
 # Basketball Economics Shiny app
 # Ziji zhou and Rohil Bathija
 
-<<<<<<< HEAD
 
-=======
 #Rohil took the lead on the second tab in our shiny output
 #Ziji took the lead on the first tab in our shiny application
-#throughout the code, you will see some comments saying oru names to signify where each of us worked primarily
+#throughout the code, you will see some comments saying our names to signify where each of us worked primarily
 #however, we did do the majority of this project together.
->>>>>>> 65f647643a6ddc9fa3df19f0ada29353191b601a
 
 #load libraries
 library(shiny)
@@ -27,7 +24,7 @@ nba_salaries <- read.csv("data/nba_salaries.csv")
 teams <- unique(nba_salaries$team)
 #for radio buttons
 stat_choice_values <- c("games", "points", "rebounds", "assists")
-stat_choice_names <- c("Games", "Points", "Rebounds", "Assists")
+stat_choice_names <- c("Games", "Points Per Game", "Rebounds Per Game", "Assists Per Game")
 names(stat_choice_values) <- stat_choice_names
 # Define UI 
 ui <- navbarPage(
@@ -119,7 +116,8 @@ server <- function(input, output) {
             #adding labels
             labs(
                 title = "Players' stats vs. Salary",
-                x = "Ratio of Player's Salary to Median Income in Team's City"
+                x = "Ratio of Player's Salary to Median Income in Team's City",
+                y = stat_choice_names[stat_choice_values == input$pt_size]
             )
     })
 }
