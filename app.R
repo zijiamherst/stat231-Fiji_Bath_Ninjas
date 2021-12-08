@@ -100,7 +100,8 @@ ui <- navbarPage(
                              label = "Which Stat do you Want?",
                              choices = stat_choice_values2,
                              selected = NULL)),
-            mainPanel(plotOutput(outputId = "NBA_salaries_plot2"))
+            mainPanel(plotOutput(outputId = "NBA_salaries_plot2"),
+                      plotOutput(outputId = "NBA_salaries_plot_salary2"))
             
         )
     )

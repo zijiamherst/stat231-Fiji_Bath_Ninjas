@@ -99,23 +99,26 @@ Seasons url: https://www.basketball-reference.com/leagues/
 nba_url <- "https://www.basketball-reference.com/leagues/"
 
 paths_allowed(nba_url)
+#allowed
 ```
 
 
 ```{r}
+#ZIJI
 # Team historical win% and total salary
 
 # get table 
 
 nba_data <- nba_url %>% 
   read_html() %>%
+  #grab the correct table
   html_nodes("table") %>%
   purrr::pluck(1) %>%
   html_table() %>%
   janitor::clean_names() %>%
   # filter years wanted
-  filter(str_detect(x,"^20|199")) %>%
-  filter(!str_detect(x,"^2021")) %>%
+  filter(str_detect(x,"^20|199"),
+         !str_detect(x,"^2021")) %>%
   # rename
   rename(season = x) %>%
   # add link column and delete extra columns
@@ -125,12 +128,12 @@ nba_data <- nba_url %>%
 # initialize big data frame
 team_info <- data_frame(season = character(),
                         team = character(),
-                        #abr = character(),
                         w = integer(),
                         l = integer(),
                         winper = numeric(),
                         total_salary = numeric()
                         )
+
 #initialize all team names vector
 all_team_names = c()
 
@@ -138,6 +141,7 @@ all_team_names = c()
 rows = 1
 years = 2021:1991
 for(i in years){
+  #for every year set it as the row'th number in vector with the correct url
   nba_data$link_bref[rows] = paste("https://www.basketball-reference.com/leagues/NBA_",i,".html",sep = "") 
   rows = rows + 1
 }
@@ -153,6 +157,7 @@ for(i in 1:nrow(nba_data)){
     html_elements("#per_game-team > tbody > tr > td.left > a") %>%
     html_text()
   
+  #create a vector of all the team names (needed because of discountinued and renamed teams)
   all_team_names = c(all_team_names,team_name)
   
   # get the links of each team
@@ -166,6 +171,7 @@ for(i in 1:nrow(nba_data)){
     team_link[x] <- paste("https://www.basketball-reference.com",team_link[x],sep = "")
   }
   
+  #put together the team banes abd their links
   teams <- data_frame(name = team_name, link = team_link)
   
   # go through each team
@@ -263,6 +269,7 @@ write_csv(team_info_clean, "data/team_info.csv")
 ```
 
 ```{r}
+#ROHIL
 # nba city and median income
 
 # convert the excel zip codes into csv for zip code info
@@ -293,6 +300,8 @@ nba_city_income <- nba_zip_codes %>%
 # from basketball reference
 nba_salary <- read_excel("data/nba_salary.xlsm")
 
+#Get Stats
+#NOTE: Website has changed since we wrote the code as the new NBA season started. We changed the data to career stat though our intended function was 2020-21 season stats before the site changed
 #to create the codes
 nba_salary$codes <- sapply(strsplit(as.character(nba_salary$Player), "\\\\"),"[", 3)
 #to rename the players to just their name
